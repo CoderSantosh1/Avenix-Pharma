@@ -1,0 +1,802 @@
+{
+  "common": {
+    "contactInfo": {
+      "address": "1234 Main Street, Suite 100, ",
+      "addressLines": [
+        "1234 Main Street, Suite 100,",
+        "Springfield, IL 62701, USA"
+      ],
+      "phone": "+1 00000000",
+      "email": "info@xyz.com",
+      "hours": "Mon - Sat, 9:00 AM - 6:00 PM"
+    },
+    "assets": {
+      "logoNav": "/logo_nav.png",
+      "logoFooter": "/logo_footer.png",
+      "hero": "/Home/heroImage.png",
+      "aboutCompany": "/About/companyImage.png",
+      "aboutLab": "/About/Labimage.png",
+      "whyChoose": "/Home/why-choose.jpg",
+      "pageBanner": "/hero.png",
+      "contact": "/Contact/contact.jpg",
+      "enquiry": "/Contact/enquiry.jpg",
+      "blogInline": "/Blog/blog-inline.jpg"
+    },
+    "iconIds": [
+      "settings",
+      "flask",
+      "package",
+      "truck",
+      "shield",
+      "file",
+      "microscope",
+      "heart",
+      "users",
+      "target",
+      "award",
+      "globe",
+      "factory",
+      "box",
+      "arrow",
+      "chevron",
+      "chevron-left",
+      "pin",
+      "phone",
+      "mail",
+      "calendar",
+      "user",
+      "folder",
+      "clock",
+      "quote",
+      "star",
+      "search",
+      "close",
+      "send",
+      "check",
+      "building",
+      "grid",
+      "message",
+      "facebook",
+      "linkedin",
+      "twitter",
+      "youtube"
+    ],
+    "Footer": {
+      "logo": "/logo_footer.png",
+      "logoAlt": "Avenix Pharma",
+      "description": "We are committed to delivering accurate laboratory testing and pharmaceutical solutions for a healthier tomorrow.",
+      "quickLinksTitle": "Quick Links",
+      "quickLinks": [
+        {
+          "name": "Home",
+          "href": "/"
+        },
+        {
+          "name": "About Us",
+          "href": "/about"
+        },
+        {
+          "name": "Services",
+          "href": "/services"
+        },
+        {
+          "name": "Product",
+          "href": "/products"
+        },
+        {
+          "name": "Blog",
+          "href": "/blog"
+        },
+        {
+          "name": "Contact Us",
+          "href": "/contact"
+        }
+      ],
+      "quickLinkIcon": "chevron",
+      "servicesTitle": "Our Services",
+      "servicesLinkIcon": "chevron",
+      "contactTitle": "Contact Info",
+      "contactIcons": {
+        "address": "pin",
+        "phone": "phone",
+        "email": "mail"
+      },
+      "copyrightText": "Copyright © 2026. All rights reserved. Powered by Lestow.",
+      "socialLinks": [
+        {
+          "name": "facebook",
+          "href": "https://facebook.com"
+        },
+        {
+          "name": "linkedin",
+          "href": "https://linkedin.com"
+        },
+        {
+          "name": "twitter",
+          "href": "https://twitter.com"
+        },
+        {
+          "name": "youtube",
+          "href": "https://youtube.com"
+        }
+      ]
+    },
+    "enquiryOptions": [
+      "Product Enquiry",
+      "Partnership",
+      "Distribution",
+      "Support",
+      "Other"
+    ],
+    "productDetailFeatures": [
+      "Manufactured in WHO-GMP certified facilities",
+      "Tested for purity, potency and stability",
+      "Available in multiple strengths and pack sizes",
+      "Suitable for domestic and export markets"
+    ],
+    "teamDetail": {
+      "socialIcons": [
+        "facebook",
+        "linkedin",
+        "twitter",
+        "youtube"
+      ],
+      "skills": [
+        {
+          "label": "Leadership",
+          "value": 95
+        },
+        {
+          "label": "Research",
+          "value": 88
+        },
+        {
+          "label": "Quality Management",
+          "value": 92
+        }
+      ]
+    }
+  },
+  "categories": {
+    "Pharma": {
+      "sections": {
+        "Header": {
+          "variants": {
+            "PharmaHeader1": {
+              "logo": "/logo_nav.png",
+              "logoAlt": "Avenix Pharma",
+              "navLinks": [
+                {
+                  "name": "Home",
+                  "href": "/"
+                },
+                {
+                  "name": "About",
+                  "href": "/about"
+                },
+                {
+                  "name": "Services",
+                  "href": "/services"
+                },
+                {
+                  "name": "Products",
+                  "href": "/products"
+                },
+                {
+                  "name": "Gallery",
+                  "href": "/gallery"
+                },
+                {
+                  "name": "Blog",
+                  "href": "/blog"
+                },
+                {
+                  "name": "Team",
+                  "href": "/team"
+                },
+                {
+                  "name": "Contact",
+                  "href": "/contact"
+                }
+              ],
+              "enquiryButton": {
+                "label": "Enquiry",
+                "href": "/enquiry",
+                "icon": "arrow"
+              },
+              "mobileMenu": {
+                "openLabel": "Open menu",
+                "closeLabel": "Close menu",
+                "navIcon": "chevron"
+              }
+            }
+          }
+        },
+        "Services": {
+          "variants": {
+            "PharmaServices1": {
+              "items": [
+                {
+                  "slug": "pharmaceutical-manufacturing",
+                  "title": "Pharmaceutical Manufacturing",
+                  "description": "State-of-the-art facilities for high-quality and safe medicine production.",
+                  "icon": "settings",
+                  "body": [
+                    "Our pharmaceutical manufacturing services are designed to produce safe, effective, and high-quality outcomes. With advanced facilities, strict quality control, and a commitment to global standards, we ensure every product meets the highest levels of safety and efficacy.",
+                    "We work across a wide range of pharmaceutical products, including tablets, capsules, liquids, and injections, using modern technology and automated processes. Our experienced team follows internationally recognized guidelines to maintain consistency, purity, and reliability in every batch.",
+                    "From raw material sourcing to final production, we focus on precision, compliance, and continuous improvement. Our goal is to support healthcare needs worldwide by delivering trusted and high-quality pharmaceutical solutions."
+                  ],
+                  "highlights": [
+                    "WHO-GMP certified facilities",
+                    "Stringent in-process quality checks",
+                    "Scalable batch sizes",
+                    "Complete regulatory documentation"
+                  ]
+                },
+                {
+                  "slug": "contract-manufacturing",
+                  "title": "Contract Manufacturing",
+                  "description": "Reliable third-party manufacturing services to support your business growth.",
+                  "icon": "flask",
+                  "body": [
+                    "Our contract manufacturing services are designed to produce safe, effective, and high-quality outcomes. With advanced facilities, strict quality control, and a commitment to global standards, we ensure every product meets the highest levels of safety and efficacy.",
+                    "We work across a wide range of pharmaceutical products, including tablets, capsules, liquids, and injections, using modern technology and automated processes. Our experienced team follows internationally recognized guidelines to maintain consistency, purity, and reliability in every batch.",
+                    "From raw material sourcing to final production, we focus on precision, compliance, and continuous improvement. Our goal is to support healthcare needs worldwide by delivering trusted and high-quality pharmaceutical solutions."
+                  ],
+                  "highlights": [
+                    "WHO-GMP certified facilities",
+                    "Stringent in-process quality checks",
+                    "Scalable batch sizes",
+                    "Complete regulatory documentation"
+                  ]
+                },
+                {
+                  "slug": "product-development",
+                  "title": "Product Development",
+                  "description": "Innovative formulations and customized solutions for better healthcare.",
+                  "icon": "package",
+                  "body": [
+                    "Our product development services are designed to produce safe, effective, and high-quality outcomes. With advanced facilities, strict quality control, and a commitment to global standards, we ensure every product meets the highest levels of safety and efficacy.",
+                    "We work across a wide range of pharmaceutical products, including tablets, capsules, liquids, and injections, using modern technology and automated processes. Our experienced team follows internationally recognized guidelines to maintain consistency, purity, and reliability in every batch.",
+                    "From raw material sourcing to final production, we focus on precision, compliance, and continuous improvement. Our goal is to support healthcare needs worldwide by delivering trusted and high-quality pharmaceutical solutions."
+                  ],
+                  "highlights": [
+                    "WHO-GMP certified facilities",
+                    "Stringent in-process quality checks",
+                    "Scalable batch sizes",
+                    "Complete regulatory documentation"
+                  ]
+                },
+                {
+                  "slug": "global-distribution",
+                  "title": "Global Distribution",
+                  "description": "Ensuring timely and efficient delivery across domestic and international markets.",
+                  "icon": "truck",
+                  "body": [
+                    "Our global distribution services are designed to produce safe, effective, and high-quality outcomes. With advanced facilities, strict quality control, and a commitment to global standards, we ensure every product meets the highest levels of safety and efficacy.",
+                    "We work across a wide range of pharmaceutical products, including tablets, capsules, liquids, and injections, using modern technology and automated processes. Our experienced team follows internationally recognized guidelines to maintain consistency, purity, and reliability in every batch.",
+                    "From raw material sourcing to final production, we focus on precision, compliance, and continuous improvement. Our goal is to support healthcare needs worldwide by delivering trusted and high-quality pharmaceutical solutions."
+                  ],
+                  "highlights": [
+                    "WHO-GMP certified facilities",
+                    "Stringent in-process quality checks",
+                    "Scalable batch sizes",
+                    "Complete regulatory documentation"
+                  ]
+                },
+                {
+                  "slug": "quality-assurance",
+                  "title": "Quality Control & Testing",
+                  "description": "Rigorous analytical testing at every stage to guarantee purity and potency.",
+                  "icon": "microscope",
+                  "body": [
+                    "Our quality control and testing services are designed to produce safe, effective, and high-quality outcomes. With advanced facilities, strict quality control, and a commitment to global standards, we ensure every product meets the highest levels of safety and efficacy.",
+                    "We work across a wide range of pharmaceutical products, including tablets, capsules, liquids, and injections, using modern technology and automated processes. Our experienced team follows internationally recognized guidelines to maintain consistency, purity, and reliability in every batch.",
+                    "From raw material sourcing to final production, we focus on precision, compliance, and continuous improvement. Our goal is to support healthcare needs worldwide by delivering trusted and high-quality pharmaceutical solutions."
+                  ],
+                  "highlights": [
+                    "WHO-GMP certified facilities",
+                    "Stringent in-process quality checks",
+                    "Scalable batch sizes",
+                    "Complete regulatory documentation"
+                  ]
+                },
+                {
+                  "slug": "research-development",
+                  "title": "Research & Development",
+                  "description": "Science-driven research that turns new ideas into effective therapies.",
+                  "icon": "flask",
+                  "body": [
+                    "Our research and development services are designed to produce safe, effective, and high-quality outcomes. With advanced facilities, strict quality control, and a commitment to global standards, we ensure every product meets the highest levels of safety and efficacy.",
+                    "We work across a wide range of pharmaceutical products, including tablets, capsules, liquids, and injections, using modern technology and automated processes. Our experienced team follows internationally recognized guidelines to maintain consistency, purity, and reliability in every batch.",
+                    "From raw material sourcing to final production, we focus on precision, compliance, and continuous improvement. Our goal is to support healthcare needs worldwide by delivering trusted and high-quality pharmaceutical solutions."
+                  ],
+                  "highlights": [
+                    "WHO-GMP certified facilities",
+                    "Stringent in-process quality checks",
+                    "Scalable batch sizes",
+                    "Complete regulatory documentation"
+                  ]
+                },
+                {
+                  "slug": "regulatory-support",
+                  "title": "Regulatory Support",
+                  "description": "Dossier preparation and compliance guidance for smooth market approvals.",
+                  "icon": "file",
+                  "body": [
+                    "Our regulatory support services are designed to produce safe, effective, and high-quality outcomes. With advanced facilities, strict quality control, and a commitment to global standards, we ensure every product meets the highest levels of safety and efficacy.",
+                    "We work across a wide range of pharmaceutical products, including tablets, capsules, liquids, and injections, using modern technology and automated processes. Our experienced team follows internationally recognized guidelines to maintain consistency, purity, and reliability in every batch.",
+                    "From raw material sourcing to final production, we focus on precision, compliance, and continuous improvement. Our goal is to support healthcare needs worldwide by delivering trusted and high-quality pharmaceutical solutions."
+                  ],
+                  "highlights": [
+                    "WHO-GMP certified facilities",
+                    "Stringent in-process quality checks",
+                    "Scalable batch sizes",
+                    "Complete regulatory documentation"
+                  ]
+                },
+                {
+                  "slug": "patient-support",
+                  "title": "Patient Support",
+                  "description": "Programs and information that help patients use medicines safely.",
+                  "icon": "heart",
+                  "body": [
+                    "Our patient support services are designed to produce safe, effective, and high-quality outcomes. With advanced facilities, strict quality control, and a commitment to global standards, we ensure every product meets the highest levels of safety and efficacy.",
+                    "We work across a wide range of pharmaceutical products, including tablets, capsules, liquids, and injections, using modern technology and automated processes. Our experienced team follows internationally recognized guidelines to maintain consistency, purity, and reliability in every batch.",
+                    "From raw material sourcing to final production, we focus on precision, compliance, and continuous improvement. Our goal is to support healthcare needs worldwide by delivering trusted and high-quality pharmaceutical solutions."
+                  ],
+                  "highlights": [
+                    "WHO-GMP certified facilities",
+                    "Stringent in-process quality checks",
+                    "Scalable batch sizes",
+                    "Complete regulatory documentation"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "Products": {
+          "variants": {
+            "PharmaProducts1": {
+              "items": [
+                {
+                  "slug": "tablets",
+                  "name": "Tablets",
+                  "summary": "Our tablets are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "capsules",
+                  "name": "Capsules",
+                  "summary": "Our capsules are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "syrups",
+                  "name": "Syrups",
+                  "summary": "Our syrups are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "injections",
+                  "name": "Injections",
+                  "summary": "Our injections are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "ointments",
+                  "name": "Ointments",
+                  "summary": "Our ointments are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "nutraceuticals",
+                  "name": "Nutraceuticals",
+                  "summary": "Our nutraceuticals are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "inhalers",
+                  "name": "Inhalers",
+                  "summary": "Our inhalers are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "eye-drops",
+                  "name": "Eye Drops",
+                  "summary": "Our eye drops are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "nasal-sprays",
+                  "name": "Nasal Sprays",
+                  "summary": "Our nasal sprays are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "dermatologicals",
+                  "name": "Dermatologicals",
+                  "summary": "Our dermatologicals are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "iv-fluids",
+                  "name": "IV Fluids",
+                  "summary": "Our iv fluids are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "vaccines",
+                  "name": "Vaccines",
+                  "summary": "Our vaccines are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "powders",
+                  "name": "Powders",
+                  "summary": "Our powders are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "oral-suspensions",
+                  "name": "Oral Suspensions",
+                  "summary": "Our oral suspensions are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "softgel-capsules",
+                  "name": "Softgel Capsules",
+                  "summary": "Our softgel capsules are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "effervescent-tablets",
+                  "name": "Effervescent Tablets",
+                  "summary": "Our effervescent tablets are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "herbal-products",
+                  "name": "Herbal Products",
+                  "summary": "Our herbal products are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                },
+                {
+                  "slug": "probiotics",
+                  "name": "Probiotics",
+                  "summary": "Our probiotics are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                }
+              ]
+            }
+          }
+        },
+        "Gallery": {
+          "variants": {
+            "PharmaGallery1": {
+              "categories": [
+                "All",
+                "Laboratory",
+                "Manufacturing",
+                "Products",
+                "Facility"
+              ],
+              "items": [
+                {
+                  "src": "/Gallery/gallery-1.jpg",
+                  "caption": "Research Laboratory",
+                  "category": "Laboratory"
+                },
+                {
+                  "src": "/Gallery/gallery-2.jpg",
+                  "caption": "Capsule Production Line",
+                  "category": "Manufacturing"
+                },
+                {
+                  "src": "/Gallery/gallery-3.jpg",
+                  "caption": "Automated Process Control",
+                  "category": "Manufacturing"
+                },
+                {
+                  "src": "/Gallery/gallery-4.jpg",
+                  "caption": "Sample Analysis",
+                  "category": "Laboratory"
+                },
+                {
+                  "src": "/Gallery/gallery-5.jpg",
+                  "caption": "Quality Medicines",
+                  "category": "Products"
+                },
+                {
+                  "src": "/Gallery/gallery-6.jpg",
+                  "caption": "Formulation Testing",
+                  "category": "Laboratory"
+                },
+                {
+                  "src": "/Gallery/gallery-7.jpg",
+                  "caption": "Sterile Vial Filling",
+                  "category": "Manufacturing"
+                },
+                {
+                  "src": "/Gallery/gallery-8.jpg",
+                  "caption": "Avenix Pharma Campus",
+                  "category": "Facility"
+                },
+                {
+                  "src": "/Gallery/gallery-9.jpg",
+                  "caption": "Tablet Packaging",
+                  "category": "Manufacturing"
+                }
+              ]
+            }
+          }
+        },
+        "Blogs": {
+          "variants": {
+            "PharmaBlogs1": {
+              "posts": [
+                {
+                  "slug": "future-of-pharmaceutical-innovation",
+                  "title": "The Future of Pharmaceutical Innovation",
+                  "date": "15 Sep 2025",
+                  "category": "Pharmaceutical",
+                  "excerpt": "How science, technology and collaboration are reshaping the way new treatments reach patients."
+                },
+                {
+                  "slug": "importance-of-quality-in-pharmaceuticals",
+                  "title": "Importance of Quality in Pharmaceuticals",
+                  "date": "10 Sep 2025",
+                  "category": "Healthcare",
+                  "excerpt": "Why rigorous quality systems are the foundation of every safe and effective medicine."
+                },
+                {
+                  "slug": "advancing-healthcare-through-research",
+                  "title": "Advancing Healthcare Through Research",
+                  "date": "05 Sep 2025",
+                  "category": "Research",
+                  "excerpt": "Inside the research programs driving better outcomes for patients worldwide."
+                },
+                {
+                  "slug": "modern-sterile-manufacturing",
+                  "title": "Modern Sterile Manufacturing Practices",
+                  "date": "28 Aug 2025",
+                  "category": "Innovation",
+                  "excerpt": "Automation and clean-room design that keep injectable products safe."
+                },
+                {
+                  "slug": "precision-medicine-explained",
+                  "title": "Precision Medicine, Explained",
+                  "date": "20 Aug 2025",
+                  "category": "Research",
+                  "excerpt": "Targeted therapies are changing how we think about dosage and treatment."
+                },
+                {
+                  "slug": "building-a-global-supply-chain",
+                  "title": "Building a Reliable Global Supply Chain",
+                  "date": "12 Aug 2025",
+                  "category": "Industry News",
+                  "excerpt": "What it takes to deliver medicines on time across domestic and international markets."
+                },
+                {
+                  "slug": "inside-a-modern-qc-laboratory",
+                  "title": "Inside a Modern QC Laboratory",
+                  "date": "05 Aug 2025",
+                  "category": "Research",
+                  "excerpt": "A look at the instruments and checks that confirm every batch is safe to release."
+                },
+                {
+                  "slug": "automation-in-tablet-manufacturing",
+                  "title": "Automation in Tablet Manufacturing",
+                  "date": "29 Jul 2025",
+                  "category": "Innovation",
+                  "excerpt": "How automated lines improve consistency, speed and traceability on the shop floor."
+                },
+                {
+                  "slug": "understanding-who-gmp",
+                  "title": "Understanding WHO-GMP Standards",
+                  "date": "22 Jul 2025",
+                  "category": "Pharmaceutical",
+                  "excerpt": "What Good Manufacturing Practice requires and why it matters to patients."
+                },
+                {
+                  "slug": "role-of-nutraceuticals",
+                  "title": "The Growing Role of Nutraceuticals",
+                  "date": "15 Jul 2025",
+                  "category": "Healthcare",
+                  "excerpt": "Why vitamins, minerals and herbal supplements are becoming part of everyday wellness."
+                },
+                {
+                  "slug": "safe-storage-of-medicines",
+                  "title": "Safe Storage of Medicines at Home",
+                  "date": "08 Jul 2025",
+                  "category": "Healthcare",
+                  "excerpt": "Simple guidelines to keep medicines effective, from temperature to packaging."
+                },
+                {
+                  "slug": "partnering-for-better-healthcare",
+                  "title": "Partnering for Better Healthcare",
+                  "date": "01 Jul 2025",
+                  "category": "Industry News",
+                  "excerpt": "How collaboration between manufacturers, hospitals and distributors improves access."
+                }
+              ],
+              "categories": [
+                {
+                  "name": "Pharmaceutical",
+                  "count": 12
+                },
+                {
+                  "name": "Research",
+                  "count": 8
+                },
+                {
+                  "name": "Healthcare",
+                  "count": 10
+                },
+                {
+                  "name": "Innovation",
+                  "count": 7
+                },
+                {
+                  "name": "Industry News",
+                  "count": 5
+                }
+              ]
+            }
+          }
+        },
+        "Testimonials": {
+          "variants": {
+            "PharmaTestimonials1": {
+              "items": [
+                {
+                  "name": "Dr. Rajesh Kumar",
+                  "role": "General Physician",
+                  "location": "New Delhi, India",
+                  "quote": "Avenix Pharma has been a reliable partner for our practice. Their product quality and timely delivery have always met our expectations."
+                },
+                {
+                  "name": "Dr. Priya Sharma",
+                  "role": "Pharmacist",
+                  "location": "Mumbai, India",
+                  "quote": "Excellent range of medicines and consistent quality. Their team is always supportive and professional."
+                },
+                {
+                  "name": "Dr. Amit Verma",
+                  "role": "Hospital Director",
+                  "location": "Bengaluru, India",
+                  "quote": "We appreciate their commitment to innovation and patient care. A trusted pharmaceutical partner for our hospital."
+                },
+                {
+                  "name": "Dr. Sanjay Mehta",
+                  "role": "Cardiologist",
+                  "location": "Pune, India",
+                  "quote": "Their documentation and regulatory support made onboarding new products effortless for our hospital network."
+                },
+                {
+                  "name": "Dr. Neha Kapoor",
+                  "role": "Clinical Researcher",
+                  "location": "Hyderabad, India",
+                  "quote": "A research-minded team that genuinely cares about outcomes. Communication is quick and transparent."
+                },
+                {
+                  "name": "Dr. Arjun Rao",
+                  "role": "Pharmacy Owner",
+                  "location": "Chennai, India",
+                  "quote": "Stock always arrives on schedule and well packed. Our customers trust the Avenix brand."
+                }
+              ]
+            }
+          }
+        },
+        "Stats": {
+          "variants": {
+            "PharmaStats1": {
+              "backgroundImage": "/Home/heroImage.png",
+              "items": [
+                {
+                  "value": 25,
+                  "suffix": "+",
+                  "label": "Years of Experience",
+                  "icon": "factory"
+                },
+                {
+                  "value": 500,
+                  "suffix": "+",
+                  "label": "Happy Clients",
+                  "icon": "users"
+                },
+                {
+                  "value": 100,
+                  "suffix": "+",
+                  "label": "Quality Products",
+                  "icon": "box"
+                },
+                {
+                  "value": 50,
+                  "suffix": "+",
+                  "label": "Countries Served",
+                  "icon": "globe"
+                }
+              ]
+            }
+          }
+        },
+        "Team": {
+          "variants": {
+            "PharmaTeam1": {
+              "members": [
+                {
+                  "slug": "rahul-sharma",
+                  "name": "Dr. Rahul Sharma",
+                  "role": "Managing Director",
+                  "email": "rahul.sharma@example.com",
+                  "phone": "+91 98765 43210",
+                  "location": "New Delhi, India",
+                  "bio": "Dr. Rahul Sharma is a dedicated healthcare professional with a strong commitment to advancing pharmaceutical care and ensuring better health outcomes for patients. His expertise and leadership help drive innovation and quality across our organization.",
+                  "about": "With years of experience in the pharmaceutical and healthcare industry, Dr. Rahul Sharma focuses on improving patient care through innovative solutions, research-driven approaches, and a commitment to excellence. He plays a key role in guiding our team and ensuring the highest standards in pharmaceutical services."
+                },
+                {
+                  "slug": "amit-verma",
+                  "name": "Dr. Amit Verma",
+                  "role": "Head of Research",
+                  "email": "amit.verma@example.com",
+                  "phone": "+91 98765 43211",
+                  "location": "Bengaluru, India",
+                  "bio": "Dr. Amit Verma leads our research programs, turning scientific insight into formulations that make a measurable difference for patients.",
+                  "about": "Dr. Verma has spent his career in formulation science and clinical research. He oversees our R&D pipeline and partners with hospitals and universities to keep Avenix Pharma at the forefront of innovation."
+                },
+                {
+                  "slug": "priya-sharma",
+                  "name": "Dr. Priya Sharma",
+                  "role": "Quality Assurance Lead",
+                  "email": "priya.sharma@example.com",
+                  "phone": "+91 98765 43212",
+                  "location": "Mumbai, India",
+                  "bio": "Dr. Priya Sharma ensures every batch that leaves our facilities meets stringent national and international quality standards.",
+                  "about": "With deep expertise in GMP compliance and analytical testing, Dr. Sharma heads our quality assurance team and drives a culture of continuous improvement across manufacturing."
+                }
+              ]
+            }
+          }
+        },
+        "AboutUs": {
+          "variants": {
+            "PharmaAboutUs1": {
+              "features": [
+                {
+                  "title": "Our Mission",
+                  "description": "To provide affordable and quality medicines.",
+                  "icon": "users"
+                },
+                {
+                  "title": "Our Vision",
+                  "description": "To be a trusted global pharmaceutical company.",
+                  "icon": "target"
+                },
+                {
+                  "title": "Our Values",
+                  "description": "Quality, integrity and innovation.",
+                  "icon": "shield"
+                }
+              ]
+            }
+          }
+        },
+        "WhyChooseUs": {
+          "variants": {
+            "PharmaWhyChooseUs1": {
+              "reasons": [
+                {
+                  "title": "High Quality Products",
+                  "icon": "award"
+                },
+                {
+                  "title": "Advanced Manufacturing",
+                  "icon": "flask"
+                },
+                {
+                  "title": "Patient-Centric Approach",
+                  "icon": "users"
+                },
+                {
+                  "title": "Global Reach",
+                  "icon": "shield"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "templateComponents": {
+        "shared": {
+          "Header": "PharmaHeader1",
+          "Footer": "PharmaFooter1"
+        }
+      }
+    }
+  }
+}

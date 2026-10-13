@@ -97,7 +97,7 @@ export default function Footer() {
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0e4f7f] transition hover:bg-teal">
                 <Icon name="pin" className="h-5 w-5" />
               </span>
-              <span className="leading-relaxed">
+              <span className="leading-relaxed hover:text-aqua ">
                 {contactInfo.addressLines[0]}
                 <br />
                 {contactInfo.addressLines[1]}
@@ -108,7 +108,7 @@ export default function Footer() {
                 href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}
                 className="flex items-center gap-4 transition hover:text-aqua"
               >
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0e4f7f]">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0e4f7f] transition hover:bg-teal hover:text-white">
                   <Icon name="phone" className="h-5 w-5" />
                 </span>
                 {contactInfo.phone}
@@ -119,7 +119,7 @@ export default function Footer() {
                 href={`mailto:${contactInfo.email}`}
                 className="flex items-center gap-4 transition hover:text-aqua"
               >
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0e4f7f]">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0e4f7f] transition hover:bg-teal hover:text-white">
                   <Icon name="mail" className="h-5 w-5" />
                 </span>
                 {contactInfo.email}

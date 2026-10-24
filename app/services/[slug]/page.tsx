@@ -108,7 +108,7 @@ export default async function ServiceDetailPage({
                   Talk to our experts and get a tailored proposal.
                 </p>
                 <ButtonLink href="/contact" variant="teal" className="mt-5">
-                  Send Enquiry
+                  Contact Us
                 </ButtonLink>
               </div>
             </Reveal>

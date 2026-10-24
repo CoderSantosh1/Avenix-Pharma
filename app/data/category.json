@@ -225,14 +225,11 @@
                 {
                   "name": "Team",
                   "href": "/team"
-                },
-                {
-                  "name": "Contact",
-                  "href": "/contact"
                 }
+               
               ],
               "enquiryButton": {
-                "label": "Enquiry",
+                "label": "Contact Us",
                 "href": "/contact",
                 "icon": "arrow"
               },
@@ -265,7 +262,7 @@
                     "Complete regulatory documentation"
                   ],
                   "image": "/Services/manufacturing.png",
-                  "heroImage": "/Services/manufacturing-large.jpg"
+                  "heroImage": "/Services/manufacturing.png"
                 },
                 {
                   "slug": "contract-manufacturing",
@@ -340,8 +337,8 @@
                     "Scalable batch sizes",
                     "Complete regulatory documentation"
                   ],
-                  "image": "/Gallery/gallery-3.jpg",
-                  "heroImage": "/Gallery/gallery-3.jpg"
+                  "image": "/About/Labimage.png",
+                  "heroImage": "/About/Labimage.png"
                 },
                 {
                   "slug": "research-development",
@@ -359,8 +356,8 @@
                     "Scalable batch sizes",
                     "Complete regulatory documentation"
                   ],
-                  "image": "/Gallery/gallery-4.jpg",
-                  "heroImage": "/Gallery/gallery-4.jpg"
+                  "image": "/Home/heroImage.png",
+                  "heroImage": "/Home/heroImage.png"
                 },
                 {
                   "slug": "regulatory-support",
@@ -378,8 +375,8 @@
                     "Scalable batch sizes",
                     "Complete regulatory documentation"
                   ],
-                  "image": "/Blog/blog-5.jpg",
-                  "heroImage": "/Blog/blog-5.jpg"
+                  "image": "/About/companyImage.png",
+                  "heroImage": "/About/companyImage.png"
                 },
                 {
                   "slug": "patient-support",

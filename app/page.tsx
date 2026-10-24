@@ -3,7 +3,7 @@ import AboutUs from "@/app/components/home/About";
 import Services from "@/app/components/home/Services";
 import Choose from "@/app/components/home/Choose";
 import Products from "@/app/components/home/Products";
-import Stats from "@/app/components/home/Stats";
+
 import Testimonials from "@/app/components/home/Testimonials";
 import Insights from "@/app/components/home/Insights";
 
@@ -15,7 +15,7 @@ export default function Home() {
       <Services />
       <Choose />
       <Products />
-      {/* <Stats /> */}
+      
       <Testimonials />
       <Insights />
     </>

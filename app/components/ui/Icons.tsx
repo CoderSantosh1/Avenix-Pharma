@@ -1,43 +1,7 @@
 import type { SVGProps } from "react";
+import type { IconName } from "@/app/types";
 
-export type Icon =
-  | "settings"
-  | "flask"
-  | "package"
-  | "truck"
-  | "shield"
-  | "file"
-  | "microscope"
-  | "heart"
-  | "users"
-  | "target"
-  | "award"
-  | "globe"
-  | "factory"
-  | "box"
-  | "arrow"
-  | "chevron"
-  | "chevron-left"
-  | "pin"
-  | "phone"
-  | "mail"
-  | "calendar"
-  | "user"
-  | "folder"
-  | "clock"
-  | "quote"
-  | "star"
-  | "search"
-  | "close"
-  | "send"
-  | "check"
-  | "building"
-  | "grid"
-  | "message"
-  | "facebook"
-  | "linkedin"
-  | "twitter"
-  | "youtube";
+export type Icon = IconName;
 
 const paths: Record<Icon, React.ReactNode> = {
   settings: (

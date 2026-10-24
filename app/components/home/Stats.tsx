@@ -1,15 +1,14 @@
 import Image from "next/image";
-import Heroimage from "@/public/Home/heroImage.png";
-import { stats } from "@/app/data/data";
+import { assets, stats } from "@/app/data/data";
 import Counter from "../ui/Counter";
-import Icon from "../ui/Icons";
+import Icon, { type Icon as IconName } from "../ui/Icons";
 import Reveal from "../ui/Reveal";
 
 export default function Stats() {
   return (
-    <section className="relative isolate overflow-hidden py-16 lg:py-20">
+    <section className="section-y relative isolate overflow-hidden">
       <Image
-        src={Heroimage}
+        src={assets.hero}
         alt=""
         fill
         sizes="100vw"
@@ -28,7 +27,7 @@ export default function Stats() {
             }`}
           >
             <span className="flex h-20 w-20 items-center justify-center rounded-full bg-white text-teal-dark shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12">
-              <Icon name={stat.icon} className="h-9 w-9" />
+              <Icon name={stat.icon as IconName} className="h-9 w-9" />
             </span>
             <p className="mt-5 text-[40px] font-bold leading-none sm:text-[52px]">
               <Counter value={stat.value} suffix={stat.suffix} />

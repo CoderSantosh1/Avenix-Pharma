@@ -32,17 +32,17 @@ export default async function ServiceDetailPage({
     <>
       <PageBanner title="Service Detail" crumbs={[{ name: "Services", href: "/services" }]} />
 
-      <section className="bg-soft px-4 py-16 sm:px-6 lg:py-20">
+      <section className="bg-soft section-y px-4 sm:px-6">
         <div className="mx-auto grid max-w-[1220px] grid-cols-1 gap-10 lg:grid-cols-[1fr_370px]">
           <div>
             <Reveal>
               <div className="mb-3 flex items-center gap-4">
-                <p className="text-[13px] font-semibold uppercase tracking-[3px] text-teal">
+                <p className="eyebrow">
                   Service Detail
                 </p>
                 <span className="grow-line h-[2px] w-14 bg-teal" />
               </div>
-              <h2 className="text-[34px] font-bold leading-[1.1] text-navy sm:text-[44px]">
+              <h2 className="heading-section">
                 {first}
                 <br />
                 <span className="text-teal">{rest.join(" ")}</span>
@@ -62,7 +62,7 @@ export default async function ServiceDetailPage({
               </div>
             </Reveal>
 
-            <div className="mt-6 space-y-4 text-[15px] leading-[1.75] text-muted">
+            <div className="mt-6 space-y-4 text-body">
               {[...service.body, ...service.body].map((p, i) => (
                 <Reveal key={i} delay={(i % 3) * 80}>
                   <p>{p}</p>
@@ -71,7 +71,7 @@ export default async function ServiceDetailPage({
             </div>
 
             <Reveal className="mt-8">
-              <h3 className="text-[22px] font-bold text-navy">Key Highlights</h3>
+              <h3 className="heading-sub">Key Highlights</h3>
               <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {service.highlights.map((h) => (
                   <li
@@ -103,11 +103,11 @@ export default async function ServiceDetailPage({
             <Reveal variant="right" delay={150}>
               <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary to-teal-dark p-7 text-white">
                 <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full border-[18px] border-white/10 animate-spin-slow" />
-                <h3 className="text-[22px] font-bold">Need this service?</h3>
+                <h3 className="text-[20px] font-bold leading-[1.3] sm:text-[22px]">Need this service?</h3>
                 <p className="mt-2 text-[14px] text-white/85">
                   Talk to our experts and get a tailored proposal.
                 </p>
-                <ButtonLink href="/enquiry" variant="teal" className="mt-5">
+                <ButtonLink href="/contact" variant="teal" className="mt-5">
                   Send Enquiry
                 </ButtonLink>
               </div>

@@ -1,25 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import LogoFooter from "@/public/logo_footer.png";
-import { contactInfo, services } from "@/app/data/data";
+import { assets, contactInfo, footer, services } from "@/app/data/data";
 import Icon, { type Icon as IconName } from "./ui/Icons";
 import Reveal from "./ui/Reveal";
-
-const quickLinks = [
-  { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Product", href: "/products" },
-  { name: "Blog", href: "/blog" },
-  { name: "Contact Us", href: "/contact" },
-];
-
-const socials: { name: IconName; href: string }[] = [
-  { name: "facebook", href: "https://facebook.com" },
-  { name: "linkedin", href: "https://linkedin.com" },
-  { name: "twitter", href: "https://twitter.com" },
-  { name: "youtube", href: "https://youtube.com" },
-];
 
 function FooterHeading({ children }: { children: string }) {
   return (
@@ -40,27 +23,28 @@ export default function Footer() {
       <div className="relative mx-auto grid max-w-[1300px] grid-cols-1 gap-10 px-6 pb-10 pt-16 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.8fr_1.1fr_1fr] lg:px-10">
         <Reveal className="lg:border-r lg:border-white/15 lg:pr-10">
           <Image
-            src={LogoFooter}
-            alt="Avenix Pharma"
-            className="h-auto w-[260px]"
+            src={assets.logoNav}
+            alt={footer.logoAlt}
+            width={1560}
+            height={470}
+            className="h-auto w-[230px]"
           />
           <p className="mt-6 max-w-[330px] text-[15px] leading-[1.75] text-white/85">
-            We are committed to delivering accurate laboratory testing and
-            pharmaceutical solutions for a healthier tomorrow.
+            {footer.description}
           </p>
         </Reveal>
 
         <Reveal delay={100}>
-          <FooterHeading>Quick Links</FooterHeading>
+          <FooterHeading>{footer.quickLinksTitle}</FooterHeading>
           <ul className="space-y-3">
-            {quickLinks.map((link) => (
+            {footer.quickLinks.map((link) => (
               <li key={link.name}>
                 <Link
                   href={link.href}
                   className="group inline-flex items-center gap-3 text-[15px] text-white/90 transition hover:text-aqua"
                 >
                   <Icon
-                    name="chevron"
+                    name={footer.quickLinkIcon as IconName}
                     className="h-4 w-4 text-aqua transition-transform group-hover:translate-x-1"
                   />
                   {link.name}
@@ -71,7 +55,7 @@ export default function Footer() {
         </Reveal>
 
         <Reveal delay={200}>
-          <FooterHeading>Our Services</FooterHeading>
+          <FooterHeading>{footer.servicesTitle}</FooterHeading>
           <ul className="space-y-2">
             {services.map((service) => (
               <li key={service.slug}>
@@ -80,7 +64,7 @@ export default function Footer() {
                   className="group inline-flex items-center gap-3 text-[15px] text-white/90 transition hover:text-aqua"
                 >
                   <Icon
-                    name="chevron"
+                    name={footer.servicesLinkIcon as IconName}
                     className="h-4 w-4 text-aqua transition-transform group-hover:translate-x-1"
                   />
                   {service.title}
@@ -91,16 +75,16 @@ export default function Footer() {
         </Reveal>
 
         <Reveal delay={300}>
-          <FooterHeading>Contact Info</FooterHeading>
+          <FooterHeading>{footer.contactTitle}</FooterHeading>
           <ul className="space-y-5 text-[15px]">
             <li className="flex items-center gap-4">
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0e4f7f] transition hover:bg-teal">
-                <Icon name="pin" className="h-5 w-5" />
+                <Icon name={footer.contactIcons.address as IconName} className="h-5 w-5" />
               </span>
               <span className="leading-relaxed hover:text-aqua ">
-                {contactInfo.addressLines[0]}
-                <br />
-                {contactInfo.addressLines[1]}
+                {contactInfo.addressLines.map((line, index) => (
+                  <span key={`${line}-${index}`} className="block">{line}</span>
+                ))}
               </span>
             </li>
             <li>
@@ -109,7 +93,7 @@ export default function Footer() {
                 className="flex items-center gap-4 transition hover:text-aqua"
               >
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0e4f7f] transition hover:bg-teal hover:text-white">
-                  <Icon name="phone" className="h-5 w-5" />
+                  <Icon name={footer.contactIcons.phone as IconName} className="h-5 w-5" />
                 </span>
                 {contactInfo.phone}
               </a>
@@ -120,7 +104,7 @@ export default function Footer() {
                 className="flex items-center gap-4 transition hover:text-aqua"
               >
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0e4f7f] transition hover:bg-teal hover:text-white">
-                  <Icon name="mail" className="h-5 w-5" />
+                  <Icon name={footer.contactIcons.email as IconName} className="h-5 w-5" />
                 </span>
                 {contactInfo.email}
               </a>
@@ -131,10 +115,10 @@ export default function Footer() {
 
       <div className="relative mx-auto flex max-w-[1300px] flex-col items-center justify-between gap-5 border-t border-white/15 px-6 py-7 sm:flex-row lg:px-10">
         <p className="text-[15px] text-white/90">
-          Copyright © 2026. All rights reserved. Powered by Lestow.
+          {footer.copyrightText}
         </p>
         <div className="flex gap-4">
-          {socials.map((s) => (
+          {footer.socialLinks.map((s) => (
             <a
               key={s.name}
               href={s.href}
@@ -143,7 +127,7 @@ export default function Footer() {
               aria-label={s.name}
               className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:bg-teal"
             >
-              <Icon name={s.name} className="h-5 w-5" />
+              <Icon name={s.name as IconName} className="h-5 w-5" />
             </a>
           ))}
         </div>

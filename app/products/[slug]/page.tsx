@@ -5,7 +5,6 @@ import { products } from "@/app/data/data";
 import PageBanner from "@/app/components/ui/PageBanner";
 import Reveal from "@/app/components/ui/Reveal";
 import Icon from "@/app/components/ui/Icons";
-import ButtonLink from "@/app/components/ui/ButtonLink";
 import SidebarList, { SidebarBox } from "@/app/components/ui/SidebarCard";
 
 export function generateStaticParams() {
@@ -39,17 +38,17 @@ export default async function ProductDetailPage({
     <>
       <PageBanner title="Product Detail" crumbs={[{ name: "Products", href: "/products" }]} />
 
-      <section className="bg-soft px-4 py-16 sm:px-6 lg:py-20">
+      <section className="bg-soft section-y px-4 sm:px-6">
         <div className="mx-auto grid max-w-[1240px] grid-cols-1 gap-10 lg:grid-cols-[1fr_370px]">
           <div>
             <Reveal>
               <div className="mb-3 flex items-center gap-4">
-                <p className="text-[13px] font-semibold uppercase tracking-[3px] text-primary">
+                <p className="eyebrow">
                   Product Detail
                 </p>
                 <span className="grow-line h-[2px] w-14 bg-primary" />
               </div>
-              <h2 className="text-[34px] font-bold text-navy sm:text-[44px]">
+              <h2 className="heading-section">
                 {product.name}
               </h2>
             </Reveal>
@@ -67,7 +66,7 @@ export default async function ProductDetailPage({
               </div>
             </Reveal>
 
-            <div className="mt-6 space-y-4 text-[16px] leading-[1.75] text-muted">
+            <div className="mt-6 space-y-4 text-body">
               <Reveal>
                 <p>
                   {product.summary} These products combine the benefits of
@@ -106,10 +105,6 @@ export default async function ProductDetailPage({
                   {f}
                 </div>
               ))}
-            </Reveal>
-
-            <Reveal className="mt-8">
-              <ButtonLink href="/enquiry">Enquire About {product.name}</ButtonLink>
             </Reveal>
           </div>
 

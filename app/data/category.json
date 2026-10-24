@@ -20,7 +20,41 @@
       "pageBanner": "/hero.png",
       "contact": "/Contact/contact.jpg",
       "enquiry": "/Contact/enquiry.jpg",
-      "blogInline": "/Blog/blog-inline.jpg"
+      "blogInline": "/Blog/blog-inline.jpg",
+      "serviceManufacturing": "/Services/manufacturing.png",
+      "serviceManufacturingHero": "/Services/manufacturing-large.jpg",
+      "serviceContract": "/Services/contract-manufacturing.png",
+      "serviceProductDevelopment": "/Services/product-development.png",
+      "serviceDistribution": "/Services/distribution.png",
+      "productTablets": "/Products/tablets.jpg",
+      "productCapsules": "/Products/capsules.jpg",
+      "productSyrups": "/Products/syrups.jpg",
+      "productInjections": "/Products/injections.jpg",
+      "productOintments": "/Products/ointments.jpg",
+      "productNutraceuticals": "/Products/nutraceuticals.jpg",
+      "productNutraceuticalsHero": "/Products/nutraceuticals-large.jpg",
+      "productInhalers": "/Products/inhalers.jpg",
+      "productEyeDrops": "/Products/eye-drops.jpg",
+      "productNasalSprays": "/Products/nasal-sprays.jpg",
+      "productDermatologicals": "/Products/dermatologicals.jpg",
+      "productIvFluids": "/Products/iv-fluids.jpg",
+      "productVaccines": "/Products/vaccines.jpg",
+      "productPowders": "/Products/powders.jpg",
+      "productOralSuspensions": "/Products/oral-suspensions.jpg",
+      "productSoftgels": "/Products/softgel-capsules.jpg",
+      "productEffervescent": "/Products/effervescent-tablets.jpg",
+      "productHerbal": "/Products/herbal-products.jpg",
+      "productProbiotics": "/Products/probiotics.jpg",
+      "blog1": "/Blog/blog-1.jpg",
+      "blog2": "/Blog/blog-2.jpg",
+      "blog3": "/Blog/blog-3.jpg",
+      "blog4": "/Blog/blog-4.jpg",
+      "blog5": "/Blog/blog-5.jpg",
+      "blog6": "/Blog/blog-6.jpg",
+      "avatar1": "/Home/avatar-1.jpg",
+      "avatar2": "/Home/avatar-2.jpg",
+      "avatar3": "/Home/avatar-3.jpg",
+      "teamRahul": "/Team/rahul-sharma.jpg"
     },
     "iconIds": [
       "settings",
@@ -62,7 +96,6 @@
       "youtube"
     ],
     "Footer": {
-      "logo": "/logo_footer.png",
       "logoAlt": "Avenix Pharma",
       "description": "We are committed to delivering accurate laboratory testing and pharmaceutical solutions for a healthier tomorrow.",
       "quickLinksTitle": "Quick Links",
@@ -163,7 +196,6 @@
         "Header": {
           "variants": {
             "PharmaHeader1": {
-              "logo": "/logo_nav.png",
               "logoAlt": "Avenix Pharma",
               "navLinks": [
                 {
@@ -201,7 +233,7 @@
               ],
               "enquiryButton": {
                 "label": "Enquiry",
-                "href": "/enquiry",
+                "href": "/contact",
                 "icon": "arrow"
               },
               "mobileMenu": {
@@ -231,7 +263,9 @@
                     "Stringent in-process quality checks",
                     "Scalable batch sizes",
                     "Complete regulatory documentation"
-                  ]
+                  ],
+                  "image": "/Services/manufacturing.png",
+                  "heroImage": "/Services/manufacturing-large.jpg"
                 },
                 {
                   "slug": "contract-manufacturing",
@@ -248,7 +282,9 @@
                     "Stringent in-process quality checks",
                     "Scalable batch sizes",
                     "Complete regulatory documentation"
-                  ]
+                  ],
+                  "image": "/Services/contract-manufacturing.png",
+                  "heroImage": "/Services/contract-manufacturing.png"
                 },
                 {
                   "slug": "product-development",
@@ -265,7 +301,9 @@
                     "Stringent in-process quality checks",
                     "Scalable batch sizes",
                     "Complete regulatory documentation"
-                  ]
+                  ],
+                  "image": "/Services/product-development.png",
+                  "heroImage": "/Services/product-development.png"
                 },
                 {
                   "slug": "global-distribution",
@@ -282,7 +320,9 @@
                     "Stringent in-process quality checks",
                     "Scalable batch sizes",
                     "Complete regulatory documentation"
-                  ]
+                  ],
+                  "image": "/Services/distribution.png",
+                  "heroImage": "/Services/distribution.png"
                 },
                 {
                   "slug": "quality-assurance",
@@ -299,7 +339,9 @@
                     "Stringent in-process quality checks",
                     "Scalable batch sizes",
                     "Complete regulatory documentation"
-                  ]
+                  ],
+                  "image": "/Gallery/gallery-3.jpg",
+                  "heroImage": "/Gallery/gallery-3.jpg"
                 },
                 {
                   "slug": "research-development",
@@ -316,7 +358,9 @@
                     "Stringent in-process quality checks",
                     "Scalable batch sizes",
                     "Complete regulatory documentation"
-                  ]
+                  ],
+                  "image": "/Gallery/gallery-4.jpg",
+                  "heroImage": "/Gallery/gallery-4.jpg"
                 },
                 {
                   "slug": "regulatory-support",
@@ -333,7 +377,9 @@
                     "Stringent in-process quality checks",
                     "Scalable batch sizes",
                     "Complete regulatory documentation"
-                  ]
+                  ],
+                  "image": "/Blog/blog-5.jpg",
+                  "heroImage": "/Blog/blog-5.jpg"
                 },
                 {
                   "slug": "patient-support",
@@ -350,7 +396,9 @@
                     "Stringent in-process quality checks",
                     "Scalable batch sizes",
                     "Complete regulatory documentation"
-                  ]
+                  ],
+                  "image": "/Gallery/gallery-1.jpg",
+                  "heroImage": "/Gallery/gallery-1.jpg"
                 }
               ]
             }
@@ -363,92 +411,111 @@
                 {
                   "slug": "tablets",
                   "name": "Tablets",
-                  "summary": "Our tablets are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our tablets are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/tablets.jpg"
                 },
                 {
                   "slug": "capsules",
                   "name": "Capsules",
-                  "summary": "Our capsules are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our capsules are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/capsules.jpg"
                 },
                 {
                   "slug": "syrups",
                   "name": "Syrups",
-                  "summary": "Our syrups are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our syrups are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/syrups.jpg"
                 },
                 {
                   "slug": "injections",
                   "name": "Injections",
-                  "summary": "Our injections are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our injections are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/injections.jpg"
                 },
                 {
                   "slug": "ointments",
                   "name": "Ointments",
-                  "summary": "Our ointments are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our ointments are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/ointments.jpg"
                 },
                 {
                   "slug": "nutraceuticals",
                   "name": "Nutraceuticals",
-                  "summary": "Our nutraceuticals are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our nutraceuticals are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/nutraceuticals.jpg",
+                  "heroImage": "/Products/nutraceuticals-large.jpg"
                 },
                 {
                   "slug": "inhalers",
                   "name": "Inhalers",
-                  "summary": "Our inhalers are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our inhalers are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/inhalers.jpg"
                 },
                 {
                   "slug": "eye-drops",
                   "name": "Eye Drops",
-                  "summary": "Our eye drops are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our eye drops are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/eye-drops.jpg"
                 },
                 {
                   "slug": "nasal-sprays",
                   "name": "Nasal Sprays",
-                  "summary": "Our nasal sprays are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our nasal sprays are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/nasal-sprays.jpg"
                 },
                 {
                   "slug": "dermatologicals",
                   "name": "Dermatologicals",
-                  "summary": "Our dermatologicals are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our dermatologicals are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/dermatologicals.jpg"
                 },
                 {
                   "slug": "iv-fluids",
                   "name": "IV Fluids",
-                  "summary": "Our iv fluids are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our iv fluids are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/iv-fluids.jpg"
                 },
                 {
                   "slug": "vaccines",
                   "name": "Vaccines",
-                  "summary": "Our vaccines are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our vaccines are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/vaccines.jpg"
                 },
                 {
                   "slug": "powders",
                   "name": "Powders",
-                  "summary": "Our powders are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our powders are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/powders.jpg"
                 },
                 {
                   "slug": "oral-suspensions",
                   "name": "Oral Suspensions",
-                  "summary": "Our oral suspensions are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our oral suspensions are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/oral-suspensions.jpg"
                 },
                 {
                   "slug": "softgel-capsules",
                   "name": "Softgel Capsules",
-                  "summary": "Our softgel capsules are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our softgel capsules are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/softgel-capsules.jpg"
                 },
                 {
                   "slug": "effervescent-tablets",
                   "name": "Effervescent Tablets",
-                  "summary": "Our effervescent tablets are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our effervescent tablets are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/effervescent-tablets.jpg"
                 },
                 {
                   "slug": "herbal-products",
                   "name": "Herbal Products",
-                  "summary": "Our herbal products are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our herbal products are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/herbal-products.jpg"
                 },
                 {
                   "slug": "probiotics",
                   "name": "Probiotics",
-                  "summary": "Our probiotics are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives."
+                  "summary": "Our probiotics are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
+                  "image": "/Products/probiotics.jpg"
                 }
               ]
             }
@@ -523,84 +590,96 @@
                   "title": "The Future of Pharmaceutical Innovation",
                   "date": "15 Sep 2025",
                   "category": "Pharmaceutical",
-                  "excerpt": "How science, technology and collaboration are reshaping the way new treatments reach patients."
+                  "excerpt": "How science, technology and collaboration are reshaping the way new treatments reach patients.",
+                  "image": "/Blog/blog-1.jpg"
                 },
                 {
                   "slug": "importance-of-quality-in-pharmaceuticals",
                   "title": "Importance of Quality in Pharmaceuticals",
                   "date": "10 Sep 2025",
                   "category": "Healthcare",
-                  "excerpt": "Why rigorous quality systems are the foundation of every safe and effective medicine."
+                  "excerpt": "Why rigorous quality systems are the foundation of every safe and effective medicine.",
+                  "image": "/Blog/blog-2.jpg"
                 },
                 {
                   "slug": "advancing-healthcare-through-research",
                   "title": "Advancing Healthcare Through Research",
                   "date": "05 Sep 2025",
                   "category": "Research",
-                  "excerpt": "Inside the research programs driving better outcomes for patients worldwide."
+                  "excerpt": "Inside the research programs driving better outcomes for patients worldwide.",
+                  "image": "/Blog/blog-3.jpg"
                 },
                 {
                   "slug": "modern-sterile-manufacturing",
                   "title": "Modern Sterile Manufacturing Practices",
                   "date": "28 Aug 2025",
                   "category": "Innovation",
-                  "excerpt": "Automation and clean-room design that keep injectable products safe."
+                  "excerpt": "Automation and clean-room design that keep injectable products safe.",
+                  "image": "/Blog/blog-4.jpg"
                 },
                 {
                   "slug": "precision-medicine-explained",
                   "title": "Precision Medicine, Explained",
                   "date": "20 Aug 2025",
                   "category": "Research",
-                  "excerpt": "Targeted therapies are changing how we think about dosage and treatment."
+                  "excerpt": "Targeted therapies are changing how we think about dosage and treatment.",
+                  "image": "/Blog/blog-5.jpg"
                 },
                 {
                   "slug": "building-a-global-supply-chain",
                   "title": "Building a Reliable Global Supply Chain",
                   "date": "12 Aug 2025",
                   "category": "Industry News",
-                  "excerpt": "What it takes to deliver medicines on time across domestic and international markets."
+                  "excerpt": "What it takes to deliver medicines on time across domestic and international markets.",
+                  "image": "/Blog/blog-6.jpg"
                 },
                 {
                   "slug": "inside-a-modern-qc-laboratory",
                   "title": "Inside a Modern QC Laboratory",
                   "date": "05 Aug 2025",
                   "category": "Research",
-                  "excerpt": "A look at the instruments and checks that confirm every batch is safe to release."
+                  "excerpt": "A look at the instruments and checks that confirm every batch is safe to release.",
+                  "image": "/Gallery/gallery-1.jpg"
                 },
                 {
                   "slug": "automation-in-tablet-manufacturing",
                   "title": "Automation in Tablet Manufacturing",
                   "date": "29 Jul 2025",
                   "category": "Innovation",
-                  "excerpt": "How automated lines improve consistency, speed and traceability on the shop floor."
+                  "excerpt": "How automated lines improve consistency, speed and traceability on the shop floor.",
+                  "image": "/Gallery/gallery-9.jpg"
                 },
                 {
                   "slug": "understanding-who-gmp",
                   "title": "Understanding WHO-GMP Standards",
                   "date": "22 Jul 2025",
                   "category": "Pharmaceutical",
-                  "excerpt": "What Good Manufacturing Practice requires and why it matters to patients."
+                  "excerpt": "What Good Manufacturing Practice requires and why it matters to patients.",
+                  "image": "/Gallery/gallery-3.jpg"
                 },
                 {
                   "slug": "role-of-nutraceuticals",
                   "title": "The Growing Role of Nutraceuticals",
                   "date": "15 Jul 2025",
                   "category": "Healthcare",
-                  "excerpt": "Why vitamins, minerals and herbal supplements are becoming part of everyday wellness."
+                  "excerpt": "Why vitamins, minerals and herbal supplements are becoming part of everyday wellness.",
+                  "image": "/Gallery/gallery-5.jpg"
                 },
                 {
                   "slug": "safe-storage-of-medicines",
                   "title": "Safe Storage of Medicines at Home",
                   "date": "08 Jul 2025",
                   "category": "Healthcare",
-                  "excerpt": "Simple guidelines to keep medicines effective, from temperature to packaging."
+                  "excerpt": "Simple guidelines to keep medicines effective, from temperature to packaging.",
+                  "image": "/Gallery/gallery-6.jpg"
                 },
                 {
                   "slug": "partnering-for-better-healthcare",
                   "title": "Partnering for Better Healthcare",
                   "date": "01 Jul 2025",
                   "category": "Industry News",
-                  "excerpt": "How collaboration between manufacturers, hospitals and distributors improves access."
+                  "excerpt": "How collaboration between manufacturers, hospitals and distributors improves access.",
+                  "image": "/Gallery/gallery-8.jpg"
                 }
               ],
               "categories": [
@@ -636,37 +715,43 @@
                   "name": "Dr. Rajesh Kumar",
                   "role": "General Physician",
                   "location": "New Delhi, India",
-                  "quote": "Avenix Pharma has been a reliable partner for our practice. Their product quality and timely delivery have always met our expectations."
+                  "quote": "Avenix Pharma has been a reliable partner for our practice. Their product quality and timely delivery have always met our expectations.",
+                  "avatar": "/Home/avatar-1.jpg"
                 },
                 {
                   "name": "Dr. Priya Sharma",
                   "role": "Pharmacist",
                   "location": "Mumbai, India",
-                  "quote": "Excellent range of medicines and consistent quality. Their team is always supportive and professional."
+                  "quote": "Excellent range of medicines and consistent quality. Their team is always supportive and professional.",
+                  "avatar": "/Home/avatar-2.jpg"
                 },
                 {
                   "name": "Dr. Amit Verma",
                   "role": "Hospital Director",
                   "location": "Bengaluru, India",
-                  "quote": "We appreciate their commitment to innovation and patient care. A trusted pharmaceutical partner for our hospital."
+                  "quote": "We appreciate their commitment to innovation and patient care. A trusted pharmaceutical partner for our hospital.",
+                  "avatar": "/Home/avatar-3.jpg"
                 },
                 {
                   "name": "Dr. Sanjay Mehta",
                   "role": "Cardiologist",
                   "location": "Pune, India",
-                  "quote": "Their documentation and regulatory support made onboarding new products effortless for our hospital network."
+                  "quote": "Their documentation and regulatory support made onboarding new products effortless for our hospital network.",
+                  "avatar": "/Home/avatar-1.jpg"
                 },
                 {
                   "name": "Dr. Neha Kapoor",
                   "role": "Clinical Researcher",
                   "location": "Hyderabad, India",
-                  "quote": "A research-minded team that genuinely cares about outcomes. Communication is quick and transparent."
+                  "quote": "A research-minded team that genuinely cares about outcomes. Communication is quick and transparent.",
+                  "avatar": "/Home/avatar-2.jpg"
                 },
                 {
                   "name": "Dr. Arjun Rao",
                   "role": "Pharmacy Owner",
                   "location": "Chennai, India",
-                  "quote": "Stock always arrives on schedule and well packed. Our customers trust the Avenix brand."
+                  "quote": "Stock always arrives on schedule and well packed. Our customers trust the Avenix brand.",
+                  "avatar": "/Home/avatar-3.jpg"
                 }
               ]
             }
@@ -717,7 +802,8 @@
                   "phone": "+91 98765 43210",
                   "location": "New Delhi, India",
                   "bio": "Dr. Rahul Sharma is a dedicated healthcare professional with a strong commitment to advancing pharmaceutical care and ensuring better health outcomes for patients. His expertise and leadership help drive innovation and quality across our organization.",
-                  "about": "With years of experience in the pharmaceutical and healthcare industry, Dr. Rahul Sharma focuses on improving patient care through innovative solutions, research-driven approaches, and a commitment to excellence. He plays a key role in guiding our team and ensuring the highest standards in pharmaceutical services."
+                  "about": "With years of experience in the pharmaceutical and healthcare industry, Dr. Rahul Sharma focuses on improving patient care through innovative solutions, research-driven approaches, and a commitment to excellence. He plays a key role in guiding our team and ensuring the highest standards in pharmaceutical services.",
+                  "image": "/Team/rahul-sharma.jpg"
                 },
                 {
                   "slug": "amit-verma",
@@ -727,7 +813,8 @@
                   "phone": "+91 98765 43211",
                   "location": "Bengaluru, India",
                   "bio": "Dr. Amit Verma leads our research programs, turning scientific insight into formulations that make a measurable difference for patients.",
-                  "about": "Dr. Verma has spent his career in formulation science and clinical research. He oversees our R&D pipeline and partners with hospitals and universities to keep Avenix Pharma at the forefront of innovation."
+                  "about": "Dr. Verma has spent his career in formulation science and clinical research. He oversees our R&D pipeline and partners with hospitals and universities to keep Avenix Pharma at the forefront of innovation.",
+                  "image": "/Home/avatar-3.jpg"
                 },
                 {
                   "slug": "priya-sharma",
@@ -737,7 +824,8 @@
                   "phone": "+91 98765 43212",
                   "location": "Mumbai, India",
                   "bio": "Dr. Priya Sharma ensures every batch that leaves our facilities meets stringent national and international quality standards.",
-                  "about": "With deep expertise in GMP compliance and analytical testing, Dr. Sharma heads our quality assurance team and drives a culture of continuous improvement across manufacturing."
+                  "about": "With deep expertise in GMP compliance and analytical testing, Dr. Sharma heads our quality assurance team and drives a culture of continuous improvement across manufacturing.",
+                  "image": "/Home/avatar-2.jpg"
                 }
               ]
             }

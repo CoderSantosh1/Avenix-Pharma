@@ -9,14 +9,14 @@ const socials: IconName[] = ["facebook", "linkedin", "twitter"];
 
 export default function TeamGrid() {
   return (
-    <section className="bg-soft px-4 py-16 sm:px-6 lg:py-20">
+    <section className="bg-soft section-y px-4 sm:px-6">
       <div className="mx-auto max-w-[1100px]">
         <SectionHeading
           label="Our Team"
           title="Meet Our"
           highlight="Experts"
           description="Experienced professionals dedicated to high-quality pharmaceutical care and support."
-          className="mb-12"
+          className="mb-10"
         />
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -33,7 +33,7 @@ export default function TeamGrid() {
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
-                <h3 className="mt-5 text-[19px] font-bold text-navy">
+                <h3 className="mt-5 heading-card">
                   {member.name}
                 </h3>
                 <p className="text-[14px] font-medium text-teal-dark">

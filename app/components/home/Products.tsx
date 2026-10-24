@@ -27,7 +27,7 @@ export function ProductCard({ product, index }: { product: Product; index: numbe
           </span>
         </div>
         <div className="px-4 py-4">
-          <h3 className="text-[16px] font-bold text-navy">{product.name}</h3>
+          <h3 className="heading-sm">{product.name}</h3>
           <span className="mt-1 inline-flex items-center gap-1 text-[13px] font-medium text-primary transition-colors group-hover:text-teal-dark">
             View Products
             <Icon
@@ -43,7 +43,7 @@ export function ProductCard({ product, index }: { product: Product; index: numbe
 
 export default function Products() {
   return (
-    <section className="w-full bg-white px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+    <section className="w-full bg-white section-y px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-[1270px]">
         <SectionHeading
           label="Our Products"

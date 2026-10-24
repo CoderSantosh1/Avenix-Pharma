@@ -23,6 +23,88 @@
   --color-line: #e3ecf5;
 }
 
+/* ---------- Shared spacing & type scale ----------
+   Use these instead of one-off sizes so every page stays consistent. */
+
+/* Vertical padding for every content section */
+@utility section-y {
+  padding-block: 3.5rem;
+  @media (width >= 40rem) {
+    padding-block: 4rem;
+  }
+  @media (width >= 64rem) {
+    padding-block: 5rem;
+  }
+}
+
+/* Small uppercase label above section titles */
+@utility eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-teal);
+}
+
+/* Section / page titles (h2) */
+@utility heading-section {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-navy);
+  @media (width >= 40rem) {
+    font-size: 34px;
+  }
+  @media (width >= 64rem) {
+    font-size: 40px;
+  }
+}
+
+/* Sub-headings inside content and sidebars (h3) */
+@utility heading-sub {
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: var(--color-navy);
+  @media (width >= 40rem) {
+    font-size: 22px;
+  }
+}
+
+/* Card titles (services, blog, team) */
+@utility heading-card {
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+/* Small titles (product cards, features, names) */
+@utility heading-sm {
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+/* Standard paragraph text */
+@utility text-body {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--color-muted);
+  @media (width >= 40rem) {
+    font-size: 16px;
+  }
+}
+
+/* Secondary / supporting text */
+@utility text-small {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
 html {
   scroll-behavior: smooth;
 }

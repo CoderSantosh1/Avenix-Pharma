@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import BannerImage from "@/public/hero.png";
+import { assets } from "@/app/data/data";
 
 type Crumb = { name: string; href?: string };
 
@@ -19,7 +19,7 @@ export default function PageBanner({
       {/* Background image; shifted up slightly to hide the dark strip on its top edge */}
       <div className="absolute inset-x-0 -top-3 bottom-0 -z-10">
         <Image
-          src={BannerImage}
+          src={assets.pageBanner}
           alt=""
           fill
           priority
@@ -27,6 +27,12 @@ export default function PageBanner({
           className="object-cover object-bottom"
         />
       </div>
+
+      {/* Subtle dark overlay for depth and text contrast */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-[#04203a]/55 via-[#04203a]/35 to-[#04203a]/55"
+      />
 
       <div className="relative z-10 px-4 text-center text-white">
         <h1 className="animate-fade-up text-[36px] font-bold tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.25)] sm:text-[48px] lg:text-[56px]">

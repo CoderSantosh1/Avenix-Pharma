@@ -1,5 +1,5 @@
 import Image from "next/image";
-import WhyChooseImage from "@/public/Home/why-choose.jpg";
+import { assets } from "@/app/data/data";
 import Icon, { type Icon as IconName } from "../ui/Icons";
 import Reveal from "../ui/Reveal";
 
@@ -23,7 +23,7 @@ export default function Choose() {
           style={{ clipPath: "polygon(22% 0, 100% 0, 100% 100%, 0 100%)" }}
         >
           <Image
-            src={WhyChooseImage}
+            src={assets.whyChoose}
             alt="Blue and white capsules"
             fill
             sizes="45vw"
@@ -32,21 +32,21 @@ export default function Choose() {
         </div>
       </Reveal>
 
-      <div className="relative mx-auto max-w-[1300px] px-6 py-16 lg:px-20 lg:py-20">
+      <div className="relative mx-auto max-w-[1300px] section-y px-6 lg:px-20">
         <div className="max-w-[660px]">
           <Reveal>
             <div className="mb-3 flex items-center gap-4">
-              <p className="text-[12px] font-semibold uppercase tracking-[3px] text-teal sm:text-[13px]">
+              <p className="eyebrow">
                 Why Choose Us
               </p>
               <span className="grow-line h-[2px] w-16 bg-teal" />
             </div>
-            <h2 className="text-[32px] font-bold leading-[1.15] tracking-tight text-navy sm:text-[38px] lg:text-[44px]">
+            <h2 className="heading-section">
               Your Trusted Partner in
               <br />
               <span className="text-teal-dark">Better Healthcare</span>
             </h2>
-            <p className="mt-5 text-[15px] leading-[1.7] text-muted sm:text-[17px]">
+            <p className="mt-5 text-body">
               We are committed to delivering high-quality, safe and affordable
               medicines that improve lives and support a healthier tomorrow.
             </p>
@@ -65,7 +65,7 @@ export default function Choose() {
                 <span className="flex h-[62px] w-[62px] items-center justify-center rounded-full bg-[#d9eef8] text-teal-dark transition-all duration-500 group-hover:-translate-y-2 group-hover:bg-teal-dark group-hover:text-white group-hover:shadow-lg">
                   <Icon name={reason.icon} className="h-7 w-7" />
                 </span>
-                <h3 className="mt-3 text-[14px] font-semibold leading-snug text-navy sm:text-[15px]">
+                <h3 className="mt-3 heading-sm">
                   {reason.title}
                 </h3>
               </Reveal>
@@ -77,7 +77,7 @@ export default function Choose() {
       {/* Mobile image */}
       <div className="relative h-64 w-full lg:hidden">
         <Image
-          src={WhyChooseImage}
+          src={assets.whyChoose}
           alt=""
           fill
           sizes="100vw"

@@ -37,8 +37,8 @@ export default function Testimonials() {
   }, [next, paused]);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#f2f8fc] to-white py-16 lg:py-20">
-      <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-teal/10 blur-3xl animate-float-slow" />
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#f2f8fc] to-white  py-16">
+      <div className="pointer-events-none absolute -left-24 h-72 w-72 rounded-full bg-teal/10 blur-3xl animate-float-slow " />
 
       <div className="mx-auto max-w-[1270px] px-4 sm:px-6">
         <SectionHeading
@@ -59,7 +59,7 @@ export default function Testimonials() {
               className="flex transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
               style={{ transform: `translateX(-${(current * 100) / perView}%)` }}
             >
-              {testimonials.map((t, i) => (
+              {testimonials.map((t: (typeof testimonials)[number] & { avatar: string }, i) => (
                 <div
                   key={`${t.name}-${i}`}
                   className="shrink-0 px-2.5 py-4"
@@ -76,10 +76,12 @@ export default function Testimonials() {
                       <Image
                         src={t.avatar}
                         alt={t.name}
+                        width={70}
+                        height={70}
                         className="h-[70px] w-[70px] shrink-0 rounded-full object-cover ring-4 ring-[#e6f2fa] transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="min-w-0 flex-1">
-                        <h3 className="text-[16px] font-bold text-navy">{t.name}</h3>
+                        <h3 className="heading-sm">{t.name}</h3>
                         <p className="text-[13px] text-muted">{t.role}</p>
                         <p className="text-[12px] text-muted">{t.location}</p>
                       </div>
@@ -88,7 +90,7 @@ export default function Testimonials() {
                         className="h-9 w-9 shrink-0 text-teal/50 transition-transform duration-500 group-hover:rotate-12 group-hover:text-teal"
                       />
                     </div>
-                    <p className="mt-5 text-[14px] leading-[1.7] text-[#4d5d72]">
+                    <p className="mt-5 text-small">
                       “{t.quote}”
                     </p>
                     <div className="mt-4 flex gap-1 text-amber-400">

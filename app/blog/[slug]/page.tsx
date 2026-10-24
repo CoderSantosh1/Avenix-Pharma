@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import BlogInline from "@/public/Blog/blog-inline.jpg";
+import { assets } from "@/app/data/data";
 import { blogCategories, blogs } from "@/app/data/data";
 import PageBanner from "@/app/components/ui/PageBanner";
 import Reveal from "@/app/components/ui/Reveal";
@@ -33,17 +33,17 @@ export default async function BlogDetailPage({
     <>
       <PageBanner title="Blog Detail" crumbs={[{ name: "Blog", href: "/blog" }]} />
 
-      <section className="bg-soft px-4 py-16 sm:px-6 lg:py-20">
+      <section className="bg-soft section-y px-4 sm:px-6">
         <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-10 lg:grid-cols-[1fr_365px]">
           <article>
             <Reveal>
               <div className="mb-3 flex items-center gap-4">
-                <p className="text-[13px] font-semibold uppercase tracking-[3px] text-teal">
+                <p className="eyebrow">
                   Blog Details
                 </p>
                 <span className="grow-line h-[2px] w-14 bg-teal" />
               </div>
-              <h2 className="text-[28px] font-bold leading-tight text-navy sm:text-[36px]">
+              <h2 className="heading-section">
                 {post.title}
               </h2>
               <div className="mt-3 flex flex-wrap gap-6 text-[14px] text-muted">
@@ -76,7 +76,7 @@ export default async function BlogDetailPage({
             </Reveal>
 
             <Reveal>
-              <p className="mt-6 text-[16px] leading-[1.75] text-muted">
+              <p className="mt-6 text-body">
                 The pharmaceutical industry is constantly evolving, driven by
                 advancements in science, technology, and a commitment to better
                 healthcare. Innovation plays a vital role in developing new
@@ -88,8 +88,8 @@ export default async function BlogDetailPage({
             <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-[1fr_190px]">
               <div className="space-y-6">
                 <Reveal>
-                  <h3 className="text-[21px] font-bold text-navy">The Role of Innovation</h3>
-                  <p className="mt-2 text-[15px] leading-[1.7] text-muted">
+                  <h3 className="heading-sub">The Role of Innovation</h3>
+                  <p className="mt-2 text-body">
                     Innovation helps in the discovery of new drugs, advanced
                     drug delivery systems, and more effective treatment
                     solutions. With the use of modern research techniques and
@@ -99,8 +99,8 @@ export default async function BlogDetailPage({
                   </p>
                 </Reveal>
                 <Reveal>
-                  <h3 className="text-[21px] font-bold text-navy">Advancements in Research</h3>
-                  <p className="mt-2 text-[15px] leading-[1.7] text-muted">
+                  <h3 className="heading-sub">Advancements in Research</h3>
+                  <p className="mt-2 text-body">
                     Modern research and development are focused on precision
                     medicine, biologics, and personalized treatments. These
                     advancements allow for more targeted therapies with fewer
@@ -111,7 +111,7 @@ export default async function BlogDetailPage({
               </div>
               <Reveal variant="right">
                 <div className="relative h-full min-h-[200px] overflow-hidden rounded-2xl animate-float-slow">
-                  <Image src={BlogInline} alt="" fill sizes="190px" className="object-cover" />
+                  <Image src={assets.blogInline} alt="" fill sizes="190px" className="object-cover" />
                 </div>
               </Reveal>
             </div>
@@ -125,8 +125,8 @@ export default async function BlogDetailPage({
             </Reveal>
 
             <Reveal className="mt-6">
-              <h3 className="text-[21px] font-bold text-navy">A Healthier Tomorrow</h3>
-              <p className="mt-2 text-[15px] leading-[1.7] text-muted">
+              <h3 className="heading-sub">A Healthier Tomorrow</h3>
+              <p className="mt-2 text-body">
                 As the industry continues to innovate, the future looks
                 promising with more effective, safe, and accessible medicines.
                 Collaboration, research, and technology will remain key in

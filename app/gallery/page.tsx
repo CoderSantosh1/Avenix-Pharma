@@ -9,7 +9,7 @@ export default function GalleryPage() {
   return (
     <>
       <PageBanner title="Gallery" />
-      <section className="bg-soft px-4 py-16 sm:px-6 lg:py-20">
+      <section className="bg-soft section-y px-4 sm:px-6">
         <div className="mx-auto max-w-[1240px]">
           <SectionHeading
             label="Our Gallery"

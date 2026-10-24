@@ -7,7 +7,7 @@ export default function BlogIndex({ page }: { page: number }) {
   return (
     <>
       <PageBanner title="Blog" />
-      <section className="bg-soft px-4 py-16 sm:px-6 lg:py-20">
+      <section className="bg-soft section-y px-4 sm:px-6">
         <div className="mx-auto max-w-[1220px]">
           <SectionHeading
             align="left"

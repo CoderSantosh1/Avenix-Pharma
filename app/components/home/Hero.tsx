@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heroimage from "@/public/Home/heroImage.png";
+import { assets } from "@/app/data/data";
 import ButtonLink from "../ui/ButtonLink";
 import Icon from "../ui/Icons";
 
@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative flex min-h-[560px] w-full items-center overflow-hidden md:min-h-[600px]">
       {/* Background image */}
       <Image
-        src={Heroimage}
+        src={assets.hero}
         alt="Scientist examining samples in a pharmaceutical laboratory"
         fill
         priority

@@ -6,6 +6,10 @@ const nextConfig: NextConfig = {
     agentFeedback: true,
   },
   cacheComponents: true,
+  async redirects() {
+    // The Enquiry page was merged into Contact Us.
+    return [{ source: "/enquiry", destination: "/contact", permanent: true }];
+  },
   partialPrefetching: true,
   turbopack: {
     rules: {

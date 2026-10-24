@@ -1,6 +1,5 @@
 import Image from "next/image";
-import CompanyImage from "@/public/About/companyImage.png";
-import LabImage from "@/public/About/Labimage.png";
+import { assets } from "@/app/data/data";
 import ButtonLink from "../ui/ButtonLink";
 import Icon, { type Icon as IconName } from "../ui/Icons";
 import Reveal from "../ui/Reveal";
@@ -25,14 +24,14 @@ const features: { title: string; description: string; icon: IconName }[] = [
 
 export default function AboutUs({ extended = false }: { extended?: boolean }) {
   return (
-    <section className="w-full overflow-hidden bg-white py-16 lg:py-24">
+    <section className="section-y w-full overflow-hidden bg-white">
       <div className="mx-auto grid w-full max-w-[1300px] grid-cols-1 items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-12 lg:px-11">
         {/* Layered images */}
         <Reveal variant="left" className="relative mx-auto w-full max-w-[620px]">
           <div className="relative aspect-[620/520]">
             <div className="absolute left-0 top-0 h-[82%] w-[72%] overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src={CompanyImage}
+                src={assets.aboutCompany}
                 alt="Avenix Pharma headquarters"
                 fill
                 sizes="(max-width: 1024px) 70vw, 30vw"
@@ -41,7 +40,7 @@ export default function AboutUs({ extended = false }: { extended?: boolean }) {
             </div>
             <div className="absolute bottom-0 right-0 h-[70%] w-[46%] overflow-hidden rounded-2xl border-[6px] border-white shadow-2xl animate-float-slow">
               <Image
-                src={LabImage}
+                src={assets.aboutLab}
                 alt="Scientist using a microscope in the lab"
                 fill
                 sizes="(max-width: 1024px) 45vw, 20vw"
@@ -64,19 +63,19 @@ export default function AboutUs({ extended = false }: { extended?: boolean }) {
         {/* Content */}
         <Reveal variant="right" className="w-full">
           <div className="mb-3 flex items-center gap-4">
-            <p className="text-[12px] font-semibold uppercase tracking-[3px] text-teal sm:text-[13px]">
+            <p className="eyebrow">
               About Avenix Pharma
             </p>
             <span className="grow-line h-[2px] w-16 bg-teal" />
           </div>
 
-          <h2 className="text-[32px] font-bold leading-[1.15] tracking-tight text-navy sm:text-[38px] lg:text-[44px]">
+          <h2 className="heading-section">
             A Commitment to
             <br />
             <span className="text-teal-dark">Better Health for All</span>
           </h2>
 
-          <p className="mt-5 text-[15px] leading-[1.7] text-muted sm:text-[16px]">
+          <p className="mt-5 text-body">
             Avenix Pharma is a leading pharmaceutical company dedicated to
             developing, manufacturing and delivering high-quality medicines
             that improve lives. With a strong focus on innovation, quality and
@@ -84,7 +83,7 @@ export default function AboutUs({ extended = false }: { extended?: boolean }) {
             and effective globally.
           </p>
           {extended && (
-            <p className="mt-4 text-[15px] leading-[1.7] text-muted sm:text-[16px]">
+            <p className="mt-4 text-body">
               From our WHO-GMP certified plants to our research labs, every
               team at Avenix works toward one goal: dependable medicines that
               patients and healthcare professionals can trust, delivered on
@@ -104,10 +103,10 @@ export default function AboutUs({ extended = false }: { extended?: boolean }) {
                   <Icon name={feature.icon} className="h-6 w-6" />
                 </div>
                 <div className="min-w-0 pt-1">
-                  <h3 className="text-[14px] font-bold text-navy">
+                  <h3 className="heading-sm">
                     {feature.title}
                   </h3>
-                  <p className="mt-1 text-[12px] leading-[1.6] text-muted">
+                  <p className="mt-1 text-[13px] leading-[1.6] text-muted">
                     {feature.description}
                   </p>
                 </div>

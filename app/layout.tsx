@@ -25,7 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${poppins.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col overflow-x-clip">
-        <Suspense fallback={<div className="min-h-[88px] w-full bg-nav" />}>
+        <Suspense fallback={<div className="min-h-[88px] w-full bg-navy-deep" />}>
           <Navbar />
         </Suspense>
         <main className="flex-1">{children}</main>

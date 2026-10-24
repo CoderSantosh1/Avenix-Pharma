@@ -32,10 +32,10 @@ export function ServiceCard({ service, index }: { service: Service; index: numbe
         </div>
 
         <div className="flex flex-1 flex-col px-5 pb-6 pt-1">
-          <h3 className="max-w-[230px] text-[18px] font-bold leading-[1.25] text-navy transition-colors group-hover:text-primary">
+          <h3 className="max-w-[230px] heading-card transition-colors group-hover:text-primary">
             {service.title}
           </h3>
-          <p className="mt-2 flex-1 text-[14px] leading-[1.55] text-muted">
+          <p className="mt-2 flex-1 text-small">
             {service.description}
           </p>
           <Link
@@ -61,7 +61,7 @@ export default function Services({ all = false }: { all?: boolean }) {
   const list = all ? services : services.slice(0, 4);
 
   return (
-    <section className="w-full bg-soft px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+    <section className="w-full bg-soft section-y px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-[1270px] rounded-2xl bg-white px-4 py-10 shadow-[0_10px_40px_-25px_rgba(16,52,90,0.35)] sm:px-6 lg:px-8">
         <SectionHeading
           label="Our Services"

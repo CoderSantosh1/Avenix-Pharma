@@ -4,9 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import Logo from "@/public/logo_nav.png";
-import { navLinks } from "@/app/data/data";
-import Icon from "./ui/Icons";
+import { assets, header, navLinks } from "@/app/data/data";
+import Icon, { type Icon as IconName } from "./ui/Icons";
 
 function isActive(pathname: string, href: string) {
   return href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -44,34 +43,36 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "bg-nav/95 shadow-[0_8px_30px_-12px_rgba(6,40,80,0.6)] backdrop-blur-md"
-          : "bg-nav"
+          ? "bg-navy-deep/95 shadow-[0_8px_30px_-12px_rgba(2,20,40,0.7)] backdrop-blur-md"
+          : "bg-navy-deep"
       }`}
     >
       <nav
-        className={`mx-auto flex w-full items-center justify-between px-5 transition-all duration-300 md:px-10 lg:px-[60px] ${
+        className={`mx-auto flex w-full items-center justify-between gap-4 px-5 transition-all duration-300 md:px-10 lg:px-8 xl:px-[60px] ${
           scrolled ? "min-h-[70px]" : "min-h-[88px]"
         }`}
       >
         <Link href="/" className="shrink-0 transition-transform hover:scale-105">
           <Image
-            src={Logo}
-            alt="Avenix Pharma"
+            src={assets.logoNav}
+            alt={header.logoAlt}
+            width={1560}
+            height={470}
             priority
             className={`h-auto object-contain transition-all duration-300 ${
-              scrolled ? "w-[140px]" : "w-[160px]"
+              scrolled ? "w-[130px] xl:w-[140px]" : "w-[140px] xl:w-[160px]"
             }`}
           />
         </Link>
 
-        <div className="hidden items-center gap-6 lg:flex xl:gap-9">
+        <div className="hidden items-center gap-5 lg:flex xl:gap-9">
           {navLinks.map((link) => {
             const active = isActive(pathname, link.href);
             return (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`group relative py-3 text-[16px] font-medium text-white transition-colors hover:text-cyan-200 ${
+                className={`group relative py-3 text-[15px] font-medium text-white xl:text-[16px] transition-colors hover:text-cyan-200 ${
                   active ? "text-white" : ""
                 }`}
               >
@@ -87,12 +88,12 @@ export default function Navbar() {
         </div>
 
         <Link
-          href="/enquiry"
-          className="shine group hidden h-[43px] min-w-[176px] items-center justify-center gap-3 rounded-full border-2 border-white bg-gradient-to-r from-[#00bfae] to-[#00a7bd] px-6 text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:brightness-110 lg:flex"
+          href={header.enquiryButton.href}
+          className="shine group hidden h-[43px] shrink-0 items-center justify-center gap-3 rounded-full border-2 border-white bg-gradient-to-r from-[#00bfae] to-[#00a7bd] px-6 xl:min-w-[176px] text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:brightness-110 lg:flex"
         >
-          Enquiry
+          {header.enquiryButton.label}
           <Icon
-            name="arrow"
+            name={header.enquiryButton.icon as IconName}
             className="h-4 w-4 transition-transform group-hover:translate-x-1"
           />
         </Link>
@@ -101,7 +102,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          aria-label={open ? "Close menu" : "Open menu"}
+          aria-label={open ? header.mobileMenu.closeLabel : header.mobileMenu.openLabel}
           aria-expanded={open}
           className="relative flex h-11 w-11 items-center justify-center rounded-full border border-white/60 lg:hidden"
         >
@@ -125,7 +126,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`overflow-hidden bg-[#0763a8] transition-[max-height] duration-500 ease-in-out lg:hidden ${
+        className={`overflow-hidden border-t border-white/10 bg-navy-deep transition-[max-height] duration-500 ease-in-out lg:hidden ${
           open ? "max-h-[600px]" : "max-h-0"
         }`}
       >
@@ -140,14 +141,14 @@ export default function Navbar() {
               }`}
             >
               {link.name}
-              <Icon name="chevron" className="h-4 w-4 opacity-60" />
+              <Icon name={header.mobileMenu.navIcon as IconName} className="h-4 w-4 opacity-60" />
             </Link>
           ))}
           <Link
-            href="/enquiry"
+            href={header.enquiryButton.href}
             className="mt-5 flex h-12 items-center justify-center gap-2 rounded-full border-2 border-white bg-gradient-to-r from-[#00bfae] to-[#00a7bd] font-semibold text-white"
           >
-            Enquiry <Icon name="arrow" className="h-4 w-4" />
+            {header.enquiryButton.label} <Icon name={header.enquiryButton.icon as IconName} className="h-4 w-4" />
           </Link>
         </div>
       </div>

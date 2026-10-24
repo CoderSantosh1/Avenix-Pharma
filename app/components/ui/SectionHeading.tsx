@@ -31,19 +31,19 @@ export default function SectionHeading({
         {centered && (
           <span className="grow-line h-[2px] w-12 bg-teal [transform-origin:right]" />
         )}
-        <p className="text-[12px] font-semibold uppercase tracking-[3px] text-teal sm:text-[13px]">
+        <p className="eyebrow">
           {label}
         </p>
         <span className="grow-line h-[2px] w-12 bg-teal" />
       </div>
 
-      <h2 className="text-[28px] font-bold leading-[1.15] tracking-tight text-navy sm:text-[34px] lg:text-[40px]">
+      <h2 className="heading-section">
         {title}{" "}
         {highlight && <span className="text-teal-dark">{highlight}</span>}
       </h2>
 
       {description && (
-        <p className="mt-3 text-[14px] leading-relaxed text-muted sm:text-[15px]">
+        <p className="mt-3 text-body">
           {description}
         </p>
       )}

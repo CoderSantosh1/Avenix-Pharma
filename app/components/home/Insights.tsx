@@ -31,7 +31,7 @@ export function BlogCard({ post, index }: { post: BlogPost; index: number }) {
             <Icon name="calendar" className="h-4 w-4 text-teal" />
             {post.date}
           </p>
-          <h3 className="mt-2 flex-1 text-[18px] font-semibold leading-snug text-navy transition-colors group-hover:text-primary">
+          <h3 className="mt-2 flex-1 heading-card transition-colors group-hover:text-primary">
             <Link href={`/blog/${post.slug}`}>{post.title}</Link>
           </h3>
           <Link
@@ -52,14 +52,14 @@ export function BlogCard({ post, index }: { post: BlogPost; index: number }) {
 
 export default function Insights() {
   return (
-    <section className="bg-white px-4 py-16 sm:px-6 lg:py-20">
+    <section className="bg-white mb-10">
       <div className="mx-auto max-w-[1220px]">
         <SectionHeading
           label="Latest Blog"
           title="Insights &"
           highlight="Updates"
           description="Stay informed with the latest news, trends and advancements in the pharmaceutical industry."
-          className="mb-10"
+          className=""
         />
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">

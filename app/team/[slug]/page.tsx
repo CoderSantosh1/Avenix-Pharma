@@ -40,7 +40,7 @@ export default async function TeamDetailPage({
     <>
       <PageBanner title="Team Detail" crumbs={[{ name: "Team", href: "/team" }]} />
 
-      <section className="bg-soft px-4 py-16 sm:px-6 lg:py-20">
+      <section className="bg-soft section-y px-4 sm:px-6">
         <div className="mx-auto max-w-[1290px]">
           <SectionHeading
             label="Our Team"
@@ -79,11 +79,11 @@ export default async function TeamDetailPage({
                 <span className="inline-block rounded-md bg-[#e3f1fa] px-4 py-1.5 text-[14px] font-medium text-navy">
                   {member.role}
                 </span>
-                <h2 className="mt-4 text-[34px] font-bold text-navy sm:text-[44px]">
+                <h2 className="mt-4 heading-section">
                   {parts.join(" ")} <span className="text-teal">{last}</span>
                 </h2>
                 <span className="mt-2 block h-[3px] w-12 rounded-full bg-teal" />
-                <p className="mt-5 text-[16px] leading-[1.75] text-muted">
+                <p className="mt-5 text-body">
                   {member.bio}
                 </p>
 
@@ -106,11 +106,11 @@ export default async function TeamDetailPage({
                   ))}
                 </div>
 
-                <h3 className="mt-8 text-[24px] font-bold text-navy">
+                <h3 className="mt-8 heading-sub">
                   About {member.name}
                 </h3>
                 <span className="mt-2 block h-[3px] w-12 rounded-full bg-teal" />
-                <p className="mt-4 text-[16px] leading-[1.75] text-muted">
+                <p className="mt-4 text-body">
                   {member.about}
                 </p>
 

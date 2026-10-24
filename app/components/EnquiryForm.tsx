@@ -63,7 +63,7 @@ export default function EnquiryForm({
         <span className="flex h-20 w-20 items-center justify-center rounded-full bg-teal text-white animate-pulse-ring">
           <Icon name="check" className="h-10 w-10" />
         </span>
-        <h3 className="mt-6 text-[24px] font-bold text-navy">Thank you!</h3>
+        <h3 className="mt-6 heading-sub">Thank you!</h3>
         <p className="mt-2 max-w-sm text-[15px] text-muted">
           Your {isEnquiry ? "enquiry" : "message"} has been received. Our team
           will get back to you shortly.

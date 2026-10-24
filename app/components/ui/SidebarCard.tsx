@@ -1,4 +1,4 @@
-import Image, { type StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import Reveal from "./Reveal";
@@ -6,7 +6,7 @@ import Reveal from "./Reveal";
 type Item = {
   href: string;
   title: string;
-  image: StaticImageData;
+  image: string;
   meta?: string;
   active?: boolean;
 };
@@ -23,7 +23,7 @@ export function SidebarBox({
   return (
     <Reveal variant="right" delay={delay}>
       <div className="rounded-2xl bg-white p-6 shadow-[0_10px_35px_-18px_rgba(16,52,90,0.3)]">
-        <h3 className="text-[22px] font-bold text-navy">{title}</h3>
+        <h3 className="heading-sub">{title}</h3>
         <span className="mb-5 mt-3 block h-[3px] w-14 rounded-full bg-teal" />
         {children}
       </div>

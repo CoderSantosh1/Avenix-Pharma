@@ -93,13 +93,26 @@ export default function GalleryGrid() {
           aria-modal="true"
           aria-label={active.caption}
           onClick={() => setOpenIndex(null)}
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#04182f]/90 p-4 backdrop-blur-sm animate-zoom-in"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#04182f]/90 px-4 py-20 backdrop-blur-sm animate-zoom-in"
         >
+          {/* Close button pinned to the viewport so it is always visible */}
+          <button
+            type="button"
+            aria-label="Close"
+            onClick={() => setOpenIndex(null)}
+            className="fixed right-4 top-4 z-[110] flex h-12 w-12 items-center justify-center rounded-full bg-white text-navy shadow-lg ring-2 ring-white/40 transition hover:rotate-90 hover:bg-teal hover:text-white sm:right-6 sm:top-6"
+          >
+            <Icon name="close" className="h-6 w-6" />
+          </button>
+
           <div
             className="relative w-full max-w-4xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <div key={openIndex} className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl animate-zoom-in">
+            <div
+              key={openIndex}
+              className="relative mx-auto aspect-[4/3] max-h-[calc(100vh-11rem)] w-full max-w-[calc((100vh-11rem)*4/3)] overflow-hidden rounded-2xl animate-zoom-in"
+            >
               <Image
                 src={active.src}
                 alt={active.caption}
@@ -117,17 +130,9 @@ export default function GalleryGrid() {
 
             <button
               type="button"
-              aria-label="Close"
-              onClick={() => setOpenIndex(null)}
-              className="absolute -top-14 right-0 flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-white transition hover:rotate-90 hover:bg-teal"
-            >
-              <Icon name="close" className="h-5 w-5" />
-            </button>
-            <button
-              type="button"
               aria-label="Previous image"
               onClick={() => setOpenIndex((i) => (i! - 1 + items.length) % items.length)}
-              className="absolute left-2 top-[45%] flex h-12 w-12 items-center justify-center rounded-full bg-white/85 text-navy transition hover:bg-teal hover:text-white sm:-left-16"
+              className="absolute left-2 top-[45%] flex h-12 w-12 items-center justify-center rounded-full bg-white/85 text-navy transition hover:bg-teal hover:text-white xl:-left-16"
             >
               <Icon name="chevron-left" className="h-6 w-6" />
             </button>
@@ -135,7 +140,7 @@ export default function GalleryGrid() {
               type="button"
               aria-label="Next image"
               onClick={() => setOpenIndex((i) => (i! + 1) % items.length)}
-              className="absolute right-2 top-[45%] flex h-12 w-12 items-center justify-center rounded-full bg-white/85 text-navy transition hover:bg-teal hover:text-white sm:-right-16"
+              className="absolute right-2 top-[45%] flex h-12 w-12 items-center justify-center rounded-full bg-white/85 text-navy transition hover:bg-teal hover:text-white xl:-right-16"
             >
               <Icon name="chevron" className="h-6 w-6" />
             </button>

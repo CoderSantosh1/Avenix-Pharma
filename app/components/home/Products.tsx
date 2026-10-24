@@ -43,7 +43,7 @@ export function ProductCard({ product, index }: { product: Product; index: numbe
 
 export default function Products() {
   return (
-    <section className="py-14 sm:py-16 lg:py-16w-full bg-white">
+    <section className="py-14 sm:py-16 lg:py-16 w-full bg-white">
       <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8">
         <SectionHeading
           label="Our Products"

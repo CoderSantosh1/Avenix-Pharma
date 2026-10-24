@@ -22,6 +22,17 @@
   --animate-slide-down: slide-down 0.35s ease-out both;
   --animate-zoom-in: zoom-in 0.35s ease-out both;
   --animate-shine: shine 0.9s ease;
+  --animate-kenburns: kenburns 18s ease-out both;
+
+  /* Banner image starts zoomed in to 110% and slowly settles to 100% */
+  @keyframes kenburns {
+    from {
+      transform: scale(1.1) translate(1.5%, 1%);
+    }
+    to {
+      transform: scale(1) translate(0, 0);
+    }
+  }
 
   @keyframes fade-up {
     from {

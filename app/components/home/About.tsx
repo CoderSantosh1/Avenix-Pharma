@@ -24,7 +24,7 @@ const features: { title: string; description: string; icon: IconName }[] = [
 
 export default function AboutUs({ extended = false }: { extended?: boolean }) {
   return (
-    <section className="py-14 sm:py-16 lg:py-16w-full overflow-hidden bg-white">
+    <section className="py-14 sm:py-16 lg:py-16 w-full overflow-hidden bg-white">
       <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-12">
         {/* Layered images */}
         <Reveal variant="left" className="relative mx-auto w-full max-w-[620px]">

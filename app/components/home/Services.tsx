@@ -61,7 +61,7 @@ export default function Services({ all = false }: { all?: boolean }) {
   const list = all ? services : services.slice(0, 4);
 
   return (
-    <section className="py-14 sm:py-16 lg:py-16w-full bg-soft">
+    <section className="py-14 sm:py-16 lg:py-16 w-full bg-soft">
       <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8">
         <div className="rounded-2xl bg-white p-5 shadow-[0_10px_40px_-25px_rgba(16,52,90,0.35)] sm:p-8 lg:p-10">
           <SectionHeading

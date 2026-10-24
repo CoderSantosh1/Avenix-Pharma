@@ -6,7 +6,7 @@ import Reveal from "../ui/Reveal";
 
 export default function Stats() {
   return (
-    <section className="py-14 sm:py-16 lg:py-16relative isolate overflow-hidden">
+    <section className="py-14 sm:py-16 lg:py-16 relative isolate overflow-hidden">
       <Image
         src={assets.hero}
         alt=""

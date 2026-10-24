@@ -24,7 +24,7 @@ export default function PageBanner({
           fill
           priority
           sizes="100vw"
-          className="object-cover object-bottom"
+          className="object-cover object-bottom motion-safe:animate-kenburns"
         />
       </div>
 

@@ -32,7 +32,7 @@ export default function Choose() {
         </div>
       </Reveal>
 
-      <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 py-14 sm:py-16 lg:py-16relative">
+      <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 py-14 sm:py-16 lg:py-16 relative">
         <div className="max-w-[660px]">
           <Reveal>
             <div className="mb-3 flex items-center gap-4">

@@ -207,8 +207,8 @@
                   "href": "/about"
                 },
                 {
-                  "name": "Services",
-                  "href": "/services"
+                  "name": "Team",
+                  "href": "/team"
                 },
                 {
                   "name": "Products",
@@ -223,10 +223,9 @@
                   "href": "/blog"
                 },
                 {
-                  "name": "Team",
-                  "href": "/team"
+                  "name": "Services",
+                  "href": "/services"
                 }
-               
               ],
               "enquiryButton": {
                 "label": "Contact Us",
@@ -378,7 +377,6 @@
                   "image": "/About/companyImage.png",
                   "heroImage": "/About/companyImage.png"
                 }
-                
               ]
             }
           }
@@ -422,7 +420,7 @@
                   "name": "Nutraceuticals",
                   "summary": "Our nutraceuticals are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
                   "image": "/Products/nutraceuticals.jpg",
-                  "heroImage": "/Products/nutraceuticals-large.jpg"
+                  "heroImage": "/Products/nutraceuticals.jpg"
                 },
                 {
                   "slug": "inhalers",

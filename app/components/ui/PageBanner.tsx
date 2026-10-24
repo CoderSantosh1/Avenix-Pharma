@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { assets } from "@/app/data/data";
 
@@ -15,23 +14,19 @@ export default function PageBanner({
   const trail: Crumb[] = [{ name: "Home", href: "/" }, ...crumbs];
 
   return (
-    <section className="relative isolate flex min-h-[240px] items-center justify-center overflow-hidden bg-[#4a97d2] py-16 sm:min-h-[320px]">
-      {/* Background image; shifted up slightly to hide the dark strip on its top edge */}
-      <div className="absolute inset-x-0 -top-3 bottom-0 -z-10">
-        <Image
-          src={assets.pageBanner}
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-bottom motion-safe:animate-kenburns"
-        />
-      </div>
+    <section className="relative flex min-h-[240px] items-center justify-center overflow-hidden bg-[#4a97d2] py-16 sm:min-h-[320px]">
+      {/* Background image (bottom layer). Shifted up a little to hide the
+          dark strip on its top edge, and slowly zooms from 110% to 100%. */}
+      <div
+        aria-hidden="true"
+        style={{ backgroundImage: `url(${assets.pageBanner})` }}
+        className="absolute inset-x-0 -top-3 bottom-0 z-0 bg-cover bg-bottom bg-no-repeat motion-safe:animate-kenburns"
+      />
 
       {/* Subtle dark overlay for depth and text contrast */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-gradient-to-b from-[#04203a]/55 via-[#04203a]/35 to-[#04203a]/55"
+        className="absolute inset-0 z-[1] bg-gradient-to-b from-[#04203a]/55 via-[#04203a]/35 to-[#04203a]/55"
       />
 
       <div className="relative z-10 px-4 text-center text-white">

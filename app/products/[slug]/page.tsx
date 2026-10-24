@@ -54,7 +54,7 @@ export default async function ProductDetailPage({
             </Reveal>
 
             <Reveal variant="zoom" className="mt-6">
-              <div className="group relative aspect-[16/10] sm:aspect-[16/7] lg:aspect-[830/350] overflow-hidden rounded-2xl bg-white shadow-lg">
+              <div className="group relative aspect-[16/10] sm:aspect-[16/7] lg:aspect-[530/250] overflow-hidden rounded-2xl bg-white shadow-lg">
                 <Image
                   src={product.heroImage ?? product.image}
                   alt={product.name}

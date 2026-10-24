@@ -389,31 +389,31 @@
                   "slug": "tablets",
                   "name": "Tablets",
                   "summary": "Our tablets are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
-                  "image": "/Products/tablets.jpg"
+                  "image": "/Products/capsules.jpg"
                 },
                 {
                   "slug": "capsules",
                   "name": "Capsules",
                   "summary": "Our capsules are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
-                  "image": "/Products/capsules.jpg"
+                  "image": "/Products/oral-suspensions.jpg"
                 },
                 {
                   "slug": "syrups",
                   "name": "Syrups",
                   "summary": "Our syrups are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
-                  "image": "/Products/syrups.jpg"
+                  "image": "/Products/capsules.jpg"
                 },
                 {
                   "slug": "injections",
                   "name": "Injections",
                   "summary": "Our injections are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
-                  "image": "/Products/injections.jpg"
+                  "image": "/Products/vaccines.jpg"
                 },
                 {
                   "slug": "ointments",
                   "name": "Ointments",
                   "summary": "Our ointments are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
-                  "image": "/Products/ointments.jpg"
+                  "image": "/Products/injections.jpg"
                 },
                 {
                   "slug": "nutraceuticals",
@@ -444,7 +444,7 @@
                   "slug": "dermatologicals",
                   "name": "Dermatologicals",
                   "summary": "Our dermatologicals are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
-                  "image": "/Products/dermatologicals.jpg"
+                  "image": "/Products/nasal-sprays.jpg"
                 },
                 {
                   "slug": "iv-fluids",
@@ -486,7 +486,7 @@
                   "slug": "herbal-products",
                   "name": "Herbal Products",
                   "summary": "Our herbal products are manufactured under strict quality standards to be safe, effective and consistent, helping patients of all age groups live healthier lives.",
-                  "image": "/Products/herbal-products.jpg"
+                  "image": "/Products/nutraceuticals-large.jpg"
                 },
                 {
                   "slug": "probiotics",

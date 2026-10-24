@@ -6,7 +6,7 @@ import Reveal from "../ui/Reveal";
 
 export default function Stats() {
   return (
-    <section className="section-y relative isolate overflow-hidden">
+    <section className="py-14 sm:py-16 lg:py-16relative isolate overflow-hidden">
       <Image
         src={assets.hero}
         alt=""
@@ -16,7 +16,7 @@ export default function Stats() {
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#0a4f93]/95 via-[#0b5ea8]/90 to-[#0a4f93]/95" />
 
-      <div className="mx-auto grid max-w-[1200px] grid-cols-2 gap-y-12 px-6 lg:grid-cols-4">
+      <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 grid grid-cols-2 gap-y-10 lg:grid-cols-4">
         {stats.map((stat, i) => (
           <Reveal
             key={stat.label}

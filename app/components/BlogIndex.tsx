@@ -7,15 +7,14 @@ export default function BlogIndex({ page }: { page: number }) {
   return (
     <>
       <PageBanner title="Blog" />
-      <section className="bg-soft section-y px-4 sm:px-6">
-        <div className="mx-auto max-w-[1220px]">
+      <section className="py-14 sm:py-16 lg:py-16bg-soft">
+        <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <SectionHeading
             align="left"
             label="Latest Blog"
             title="Insights &"
             highlight="Updates"
             description="Stay informed with the latest news, trends and advancements in the pharmaceutical industry."
-            className="mb-10"
           />
           <BlogList page={page} />
         </div>

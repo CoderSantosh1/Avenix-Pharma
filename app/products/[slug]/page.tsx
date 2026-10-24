@@ -38,23 +38,23 @@ export default async function ProductDetailPage({
     <>
       <PageBanner title="Product Detail" crumbs={[{ name: "Products", href: "/products" }]} />
 
-      <section className="bg-soft section-y px-4 sm:px-6">
-        <div className="mx-auto grid max-w-[1240px] grid-cols-1 gap-10 lg:grid-cols-[1fr_370px]">
+      <section className="py-14 sm:py-16 lg:py-16bg-soft">
+        <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_360px] lg:gap-10">
           <div>
             <Reveal>
               <div className="mb-3 flex items-center gap-4">
-                <p className="eyebrow">
+                <p className="text-[13px] font-semibold uppercase tracking-[3px] text-teal">
                   Product Detail
                 </p>
-                <span className="grow-line h-[2px] w-14 bg-primary" />
+                <span className="origin-left scale-x-0 transition-transform delay-300 duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-data-[visible=true]/reveal:scale-x-100 h-[2px] w-14 bg-primary" />
               </div>
-              <h2 className="heading-section">
+              <h2 className="text-[28px] font-bold leading-[1.2] tracking-[-0.02em] text-navy sm:text-[34px] lg:text-[40px]">
                 {product.name}
               </h2>
             </Reveal>
 
             <Reveal variant="zoom" className="mt-6">
-              <div className="group relative aspect-[830/350] min-h-[240px] overflow-hidden rounded-2xl bg-white shadow-lg">
+              <div className="group relative aspect-[16/10] sm:aspect-[16/7] lg:aspect-[830/350] overflow-hidden rounded-2xl bg-white shadow-lg">
                 <Image
                   src={product.heroImage ?? product.image}
                   alt={product.name}
@@ -66,7 +66,7 @@ export default async function ProductDetailPage({
               </div>
             </Reveal>
 
-            <div className="mt-6 space-y-4 text-body">
+            <div className="mt-6 space-y-4 text-[15px] leading-[1.75] text-muted sm:text-[16px]">
               <Reveal>
                 <p>
                   {product.summary} These products combine the benefits of

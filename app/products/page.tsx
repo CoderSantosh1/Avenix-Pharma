@@ -11,18 +11,17 @@ export default function ProductsPage() {
     <>
       <PageBanner title="Product" />
 
-      <section className="bg-soft section-y px-4 sm:px-6">
-        <div className="mx-auto max-w-[1220px]">
+      <section className="py-14 sm:py-16 lg:py-16bg-soft">
+        <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <SectionHeading
             align="left"
             label="Our Products"
             title="Quality Medicines for a"
             highlight="Healthier Tomorrow"
             description="We offer a wide range of pharmaceutical products across various therapeutic segments."
-            className="mb-10"
           />
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 lg:grid-cols-6">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-6">
             {products.map((product, i) => (
               <ProductCard key={product.slug} product={product} index={i} />
             ))}

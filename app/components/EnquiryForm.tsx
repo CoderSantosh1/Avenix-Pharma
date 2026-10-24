@@ -60,10 +60,10 @@ export default function EnquiryForm({
   if (status === "sent") {
     return (
       <div className="flex flex-col items-center py-12 text-center animate-zoom-in">
-        <span className="flex h-20 w-20 items-center justify-center rounded-full bg-teal text-white animate-pulse-ring">
+        <span className="flex h-20 w-20 items-center justify-center rounded-full bg-teal text-white motion-safe:animate-pulse-ring">
           <Icon name="check" className="h-10 w-10" />
         </span>
-        <h3 className="mt-6 heading-sub">Thank you!</h3>
+        <h3 className="mt-6 text-[20px] font-bold leading-[1.3] text-navy sm:text-[22px]">Thank you!</h3>
         <p className="mt-2 max-w-sm text-[15px] text-muted">
           Your {isEnquiry ? "enquiry" : "message"} has been received. Our team
           will get back to you shortly.
@@ -148,7 +148,7 @@ export default function EnquiryForm({
         <button
           type="submit"
           disabled={status === "sending"}
-          className={`shine group inline-flex h-[50px] items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#0a4a91] to-primary px-10 text-[15px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_15px_30px_-12px_rgba(8,102,178,0.8)] disabled:opacity-70 ${
+          className={`relative isolate overflow-hidden after:pointer-events-none after:absolute after:inset-y-0 after:left-0 after:w-2/5 after:bg-linear-to-r after:from-transparent after:via-white/45 after:to-transparent after:[transform:translateX(-120%)_skewX(-20deg)] hover:after:animate-shine group inline-flex h-[50px] items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#0a4a91] to-primary px-10 text-[15px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_15px_30px_-12px_rgba(8,102,178,0.8)] disabled:opacity-70 ${
             isEnquiry ? "min-w-[230px]" : "w-full"
           }`}
         >

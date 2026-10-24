@@ -27,7 +27,7 @@ export function ProductCard({ product, index }: { product: Product; index: numbe
           </span>
         </div>
         <div className="px-4 py-4">
-          <h3 className="heading-sm">{product.name}</h3>
+          <h3 className="text-[15px] font-semibold leading-[1.35] text-navy">{product.name}</h3>
           <span className="mt-1 inline-flex items-center gap-1 text-[13px] font-medium text-primary transition-colors group-hover:text-teal-dark">
             View Products
             <Icon
@@ -43,17 +43,16 @@ export function ProductCard({ product, index }: { product: Product; index: numbe
 
 export default function Products() {
   return (
-    <section className="w-full bg-white section-y px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-[1270px]">
+    <section className="py-14 sm:py-16 lg:py-16w-full bg-white">
+      <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8">
         <SectionHeading
           label="Our Products"
           title="Quality Medicines for a"
           highlight="Healthier Tomorrow"
           description="We offer a wide range of pharmaceutical products across various therapeutic segments."
-          className="mb-10"
         />
 
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-6">
           {products.slice(0, 6).map((product, i) => (
             <ProductCard key={product.slug} product={product} index={i} />
           ))}

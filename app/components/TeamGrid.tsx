@@ -9,17 +9,16 @@ const socials: IconName[] = ["facebook", "linkedin", "twitter"];
 
 export default function TeamGrid() {
   return (
-    <section className="bg-soft section-y px-4 sm:px-6">
-      <div className="mx-auto max-w-[1100px]">
+    <section className="py-14 sm:py-16 lg:py-16bg-soft">
+      <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8">
         <SectionHeading
           label="Our Team"
           title="Meet Our"
           highlight="Experts"
           description="Experienced professionals dedicated to high-quality pharmaceutical care and support."
-          className="mb-10"
         />
 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {team.map((member, i) => (
             <Reveal key={member.slug} variant="up" delay={i * 130}>
               <article className="group relative overflow-hidden rounded-2xl bg-white p-8 text-center shadow-[0_10px_30px_-15px_rgba(16,52,90,0.3)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_45px_-20px_rgba(8,102,178,0.5)]">
@@ -33,7 +32,7 @@ export default function TeamGrid() {
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
-                <h3 className="mt-5 heading-card">
+                <h3 className="mt-5 text-[18px] font-semibold leading-[1.35] text-navy">
                   {member.name}
                 </h3>
                 <p className="text-[14px] font-medium text-teal-dark">

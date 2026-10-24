@@ -9,14 +9,13 @@ export default function GalleryPage() {
   return (
     <>
       <PageBanner title="Gallery" />
-      <section className="bg-soft section-y px-4 sm:px-6">
-        <div className="mx-auto max-w-[1240px]">
+      <section className="py-14 sm:py-16 lg:py-16bg-soft">
+        <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <SectionHeading
             label="Our Gallery"
             title="Our"
             highlight="Gallery"
             description="A glimpse of our facilities, products and commitment to better healthcare."
-            className="mb-10"
           />
           <GalleryGrid />
         </div>

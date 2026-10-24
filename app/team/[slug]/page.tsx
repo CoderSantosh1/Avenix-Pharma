@@ -40,14 +40,13 @@ export default async function TeamDetailPage({
     <>
       <PageBanner title="Team Detail" crumbs={[{ name: "Team", href: "/team" }]} />
 
-      <section className="bg-soft section-y px-4 sm:px-6">
-        <div className="mx-auto max-w-[1290px]">
+      <section className="py-14 sm:py-16 lg:py-16bg-soft">
+        <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <SectionHeading
             label="Our Team"
             title="Team"
             highlight="Detail"
             description="Get to know more about our expert team member who is dedicated to providing high-quality pharmaceutical care and support."
-            className="mb-10"
           />
 
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-[490px_1fr]">
@@ -79,11 +78,11 @@ export default async function TeamDetailPage({
                 <span className="inline-block rounded-md bg-[#e3f1fa] px-4 py-1.5 text-[14px] font-medium text-navy">
                   {member.role}
                 </span>
-                <h2 className="mt-4 heading-section">
+                <h2 className="mt-4 text-[28px] font-bold leading-[1.2] tracking-[-0.02em] text-navy sm:text-[34px] lg:text-[40px]">
                   {parts.join(" ")} <span className="text-teal">{last}</span>
                 </h2>
                 <span className="mt-2 block h-[3px] w-12 rounded-full bg-teal" />
-                <p className="mt-5 text-body">
+                <p className="mt-5 text-[15px] leading-[1.75] text-muted sm:text-[16px]">
                   {member.bio}
                 </p>
 
@@ -106,11 +105,11 @@ export default async function TeamDetailPage({
                   ))}
                 </div>
 
-                <h3 className="mt-8 heading-sub">
+                <h3 className="mt-8 text-[20px] font-bold leading-[1.3] text-navy sm:text-[22px]">
                   About {member.name}
                 </h3>
                 <span className="mt-2 block h-[3px] w-12 rounded-full bg-teal" />
-                <p className="mt-4 text-body">
+                <p className="mt-4 text-[15px] leading-[1.75] text-muted sm:text-[16px]">
                   {member.about}
                 </p>
 
@@ -127,7 +126,7 @@ export default async function TeamDetailPage({
                       </div>
                       <div className="h-2 overflow-hidden rounded-full bg-[#e3eef6]">
                         <div
-                          className="grow-line h-full rounded-full bg-gradient-to-r from-primary to-teal"
+                          className="origin-left scale-x-0 transition-transform delay-300 duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-data-[visible=true]/reveal:scale-x-100 h-full rounded-full bg-gradient-to-r from-primary to-teal"
                           style={{ width: `${pct}%` }}
                         />
                       </div>

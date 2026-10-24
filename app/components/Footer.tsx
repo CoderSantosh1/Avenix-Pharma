@@ -17,10 +17,10 @@ export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-navy-deep text-white">
       {/* animated decorative rings */}
-      <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full border-[40px] border-white/[0.03] animate-spin-slow" />
+      <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full border-[40px] border-white/[0.03] motion-safe:animate-spin-slow" />
       <div className="pointer-events-none absolute -bottom-40 -left-24 h-96 w-96 rounded-full bg-teal/10 blur-3xl" />
 
-      <div className="relative mx-auto grid max-w-[1300px] grid-cols-1 gap-10 px-6 pb-10 pt-16 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.8fr_1.1fr_1fr] lg:px-10">
+      <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 relative grid grid-cols-1 gap-10 pb-10 pt-14 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.8fr_1.1fr_1fr] lg:pt-16">
         <Reveal className="lg:border-r lg:border-white/15 lg:pr-10">
           <Image
             src={assets.logoNav}
@@ -113,7 +113,7 @@ export default function Footer() {
         </Reveal>
       </div>
 
-      <div className="relative mx-auto flex max-w-[1300px] flex-col items-center justify-between gap-5 border-t border-white/15 px-6 py-7 sm:flex-row lg:px-10">
+      <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 relative flex flex-col items-center justify-between gap-5 py-6 text-center sm:flex-row sm:text-left">
         <p className="text-[15px] text-white/90">
           {footer.copyrightText}
         </p>

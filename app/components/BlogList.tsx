@@ -28,7 +28,7 @@ export default function BlogList({ page = 1 }: { page?: number }) {
       {blogTotalPages > 1 && (
         <nav
           aria-label="Blog pagination"
-          className="mt-12 flex items-center justify-center gap-2.5"
+          className="mt-10 flex flex-wrap items-center justify-center gap-2.5"
         >
           {page > 1 ? (
             <Link href={pageHref(page - 1)} aria-label="Previous page" className={`${boxClass} ${idleClass}`}>

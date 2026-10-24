@@ -23,7 +23,7 @@ export function SidebarBox({
   return (
     <Reveal variant="right" delay={delay}>
       <div className="rounded-2xl bg-white p-6 shadow-[0_10px_35px_-18px_rgba(16,52,90,0.3)]">
-        <h3 className="heading-sub">{title}</h3>
+        <h3 className="text-[20px] font-bold leading-[1.3] text-navy sm:text-[22px]">{title}</h3>
         <span className="mb-5 mt-3 block h-[3px] w-14 rounded-full bg-teal" />
         {children}
       </div>

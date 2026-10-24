@@ -32,10 +32,10 @@ export function ServiceCard({ service, index }: { service: Service; index: numbe
         </div>
 
         <div className="flex flex-1 flex-col px-5 pb-6 pt-1">
-          <h3 className="max-w-[230px] heading-card transition-colors group-hover:text-primary">
+          <h3 className="max-w-[230px] text-[18px] font-semibold leading-[1.35] text-navy transition-colors group-hover:text-primary">
             {service.title}
           </h3>
-          <p className="mt-2 flex-1 text-small">
+          <p className="mt-2 flex-1 text-[14px] leading-[1.6] text-muted">
             {service.description}
           </p>
           <Link
@@ -61,20 +61,21 @@ export default function Services({ all = false }: { all?: boolean }) {
   const list = all ? services : services.slice(0, 4);
 
   return (
-    <section className="w-full bg-soft section-y px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-[1270px] rounded-2xl bg-white px-4 py-10 shadow-[0_10px_40px_-25px_rgba(16,52,90,0.35)] sm:px-6 lg:px-8">
-        <SectionHeading
-          label="Our Services"
-          title="Comprehensive"
-          highlight="Pharmaceutical Solutions"
-          description="We offer end-to-end pharmaceutical solutions to meet diverse healthcare needs."
-          className="mb-10"
-        />
+    <section className="py-14 sm:py-16 lg:py-16w-full bg-soft">
+      <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8">
+        <div className="rounded-2xl bg-white p-5 shadow-[0_10px_40px_-25px_rgba(16,52,90,0.35)] sm:p-8 lg:p-10">
+          <SectionHeading
+            label="Our Services"
+            title="Comprehensive"
+            highlight="Pharmaceutical Solutions"
+            description="We offer end-to-end pharmaceutical solutions to meet diverse healthcare needs."
+          />
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {list.map((service, index) => (
-            <ServiceCard key={service.slug} service={service} index={index} />
-          ))}
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {list.map((service, index) => (
+              <ServiceCard key={service.slug} service={service} index={index} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

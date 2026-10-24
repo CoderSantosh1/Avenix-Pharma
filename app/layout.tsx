@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${poppins.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col overflow-x-clip">
+    <html lang="en" className={`${poppins.variable} h-full scroll-smooth antialiased motion-reduce:scroll-auto`}>
+      <body className="flex min-h-full flex-col overflow-x-clip bg-white font-sans text-navy">
         <Suspense fallback={<div className="min-h-[88px] w-full bg-navy-deep" />}>
           <Navbar />
         </Suspense>

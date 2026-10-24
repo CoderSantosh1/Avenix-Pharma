@@ -24,7 +24,7 @@ export default function ButtonLink({
   return (
     <Link
       href={href}
-      className={`shine group/btn inline-flex h-[48px] items-center justify-center gap-3 rounded-full px-7 text-[15px] font-semibold transition-all duration-300 hover:-translate-y-0.5 ${variants[variant]} ${className}`}
+      className={`relative isolate overflow-hidden after:pointer-events-none after:absolute after:inset-y-0 after:left-0 after:w-2/5 after:bg-linear-to-r after:from-transparent after:via-white/45 after:to-transparent after:[transform:translateX(-120%)_skewX(-20deg)] hover:after:animate-shine group/btn inline-flex h-[48px] items-center justify-center gap-3 rounded-full px-7 text-[15px] font-semibold transition-all duration-300 hover:-translate-y-0.5 ${variants[variant]} ${className}`}
     >
       {children}
       <Icon

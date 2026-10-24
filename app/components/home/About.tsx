@@ -24,8 +24,8 @@ const features: { title: string; description: string; icon: IconName }[] = [
 
 export default function AboutUs({ extended = false }: { extended?: boolean }) {
   return (
-    <section className="section-y w-full overflow-hidden bg-white">
-      <div className="mx-auto grid w-full max-w-[1300px] grid-cols-1 items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-12 lg:px-11">
+    <section className="py-14 sm:py-16 lg:py-16w-full overflow-hidden bg-white">
+      <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-12">
         {/* Layered images */}
         <Reveal variant="left" className="relative mx-auto w-full max-w-[620px]">
           <div className="relative aspect-[620/520]">
@@ -38,7 +38,7 @@ export default function AboutUs({ extended = false }: { extended?: boolean }) {
                 className="object-cover transition-transform duration-700 hover:scale-105"
               />
             </div>
-            <div className="absolute bottom-0 right-0 h-[70%] w-[46%] overflow-hidden rounded-2xl border-[6px] border-white shadow-2xl animate-float-slow">
+            <div className="absolute bottom-0 right-0 h-[70%] w-[46%] overflow-hidden rounded-2xl border-[6px] border-white shadow-2xl motion-safe:animate-float-slow">
               <Image
                 src={assets.aboutLab}
                 alt="Scientist using a microscope in the lab"
@@ -63,19 +63,19 @@ export default function AboutUs({ extended = false }: { extended?: boolean }) {
         {/* Content */}
         <Reveal variant="right" className="w-full">
           <div className="mb-3 flex items-center gap-4">
-            <p className="eyebrow">
+            <p className="text-[13px] font-semibold uppercase tracking-[3px] text-teal">
               About Avenix Pharma
             </p>
-            <span className="grow-line h-[2px] w-16 bg-teal" />
+            <span className="origin-left scale-x-0 transition-transform delay-300 duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-data-[visible=true]/reveal:scale-x-100 h-[2px] w-16 bg-teal" />
           </div>
 
-          <h2 className="heading-section">
+          <h2 className="text-[28px] font-bold leading-[1.2] tracking-[-0.02em] text-navy sm:text-[34px] lg:text-[40px]">
             A Commitment to
             <br />
             <span className="text-teal-dark">Better Health for All</span>
           </h2>
 
-          <p className="mt-5 text-body">
+          <p className="mt-5 text-[15px] leading-[1.75] text-muted sm:text-[16px]">
             Avenix Pharma is a leading pharmaceutical company dedicated to
             developing, manufacturing and delivering high-quality medicines
             that improve lives. With a strong focus on innovation, quality and
@@ -83,7 +83,7 @@ export default function AboutUs({ extended = false }: { extended?: boolean }) {
             and effective globally.
           </p>
           {extended && (
-            <p className="mt-4 text-body">
+            <p className="mt-4 text-[15px] leading-[1.75] text-muted sm:text-[16px]">
               From our WHO-GMP certified plants to our research labs, every
               team at Avenix works toward one goal: dependable medicines that
               patients and healthcare professionals can trust, delivered on
@@ -103,7 +103,7 @@ export default function AboutUs({ extended = false }: { extended?: boolean }) {
                   <Icon name={feature.icon} className="h-6 w-6" />
                 </div>
                 <div className="min-w-0 pt-1">
-                  <h3 className="heading-sm">
+                  <h3 className="text-[15px] font-semibold leading-[1.35] text-navy">
                     {feature.title}
                   </h3>
                   <p className="mt-1 text-[13px] leading-[1.6] text-muted">

@@ -18,8 +18,8 @@ const details: { title: string; value: string; icon: IconName }[] = [
 function Label({ children }: { children: string }) {
   return (
     <div className="mb-2 flex items-center gap-3">
-      <span className="grow-line h-[2px] w-9 bg-teal" />
-      <p className="eyebrow">
+      <span className="origin-left scale-x-0 transition-transform delay-300 duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-data-[visible=true]/reveal:scale-x-100 h-[2px] w-9 bg-teal" />
+      <p className="text-[13px] font-semibold uppercase tracking-[3px] text-teal">
         {children}
       </p>
     </div>
@@ -31,14 +31,14 @@ export default function ContactPage() {
     <>
       <PageBanner title="Contact Us" />
 
-      <section className="bg-soft section-y px-4 sm:px-6">
-        <div className="mx-auto grid max-w-[1140px] grid-cols-1 gap-10 lg:grid-cols-[425px_1fr]">
+      <section className="py-14 sm:py-16 lg:py-16bg-soft">
+        <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 grid grid-cols-1 gap-8 lg:grid-cols-[400px_1fr] lg:gap-10">
           <Reveal variant="left">
             <Label>Get in Touch</Label>
-            <h2 className="heading-section">
+            <h2 className="text-[28px] font-bold leading-[1.2] tracking-[-0.02em] text-navy sm:text-[34px] lg:text-[40px]">
               Send Your <span className="text-teal">Enquiry</span>
             </h2>
-            <p className="mt-3 text-body">
+            <p className="mt-3 text-[15px] leading-[1.75] text-muted sm:text-[16px]">
               Have a question or need more information about our pharmaceutical
               products or services? Fill out the form and our team will get
               back to you shortly.
@@ -76,11 +76,11 @@ export default function ContactPage() {
           <Reveal variant="right">
             <div className="rounded-2xl bg-white p-6 shadow-[0_10px_40px_-18px_rgba(16,52,90,0.3)] sm:p-9">
               <Label>Enquiry Form</Label>
-              <h2 className="heading-section">
+              <h2 className="text-[28px] font-bold leading-[1.2] tracking-[-0.02em] text-navy sm:text-[34px] lg:text-[40px]">
                 Let&apos;s Discuss Your{" "}
                 <span className="text-teal">Requirements</span>
               </h2>
-              <p className="mb-6 mt-2 text-body">
+              <p className="mb-6 mt-2 text-[15px] leading-[1.75] text-muted sm:text-[16px]">
                 Please fill in the details below and we will get in touch with
                 you soon.
               </p>

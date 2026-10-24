@@ -33,17 +33,17 @@ export default async function BlogDetailPage({
     <>
       <PageBanner title="Blog Detail" crumbs={[{ name: "Blog", href: "/blog" }]} />
 
-      <section className="bg-soft section-y px-4 sm:px-6">
-        <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-10 lg:grid-cols-[1fr_365px]">
+      <section className="py-14 sm:py-16 lg:py-16bg-soft">
+        <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_360px] lg:gap-10">
           <article>
             <Reveal>
               <div className="mb-3 flex items-center gap-4">
-                <p className="eyebrow">
+                <p className="text-[13px] font-semibold uppercase tracking-[3px] text-teal">
                   Blog Details
                 </p>
-                <span className="grow-line h-[2px] w-14 bg-teal" />
+                <span className="origin-left scale-x-0 transition-transform delay-300 duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-data-[visible=true]/reveal:scale-x-100 h-[2px] w-14 bg-teal" />
               </div>
-              <h2 className="heading-section">
+              <h2 className="text-[28px] font-bold leading-[1.2] tracking-[-0.02em] text-navy sm:text-[34px] lg:text-[40px]">
                 {post.title}
               </h2>
               <div className="mt-3 flex flex-wrap gap-6 text-[14px] text-muted">
@@ -63,7 +63,7 @@ export default async function BlogDetailPage({
             </Reveal>
 
             <Reveal variant="zoom" className="mt-6">
-              <div className="group relative aspect-[800/240] min-h-[220px] overflow-hidden rounded-2xl shadow-lg">
+              <div className="group relative aspect-[16/10] sm:aspect-[16/7] lg:aspect-[800/280] overflow-hidden rounded-2xl shadow-lg">
                 <Image
                   src={post.image}
                   alt={post.title}
@@ -76,7 +76,7 @@ export default async function BlogDetailPage({
             </Reveal>
 
             <Reveal>
-              <p className="mt-6 text-body">
+              <p className="mt-6 text-[15px] leading-[1.75] text-muted sm:text-[16px]">
                 The pharmaceutical industry is constantly evolving, driven by
                 advancements in science, technology, and a commitment to better
                 healthcare. Innovation plays a vital role in developing new
@@ -88,8 +88,8 @@ export default async function BlogDetailPage({
             <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-[1fr_190px]">
               <div className="space-y-6">
                 <Reveal>
-                  <h3 className="heading-sub">The Role of Innovation</h3>
-                  <p className="mt-2 text-body">
+                  <h3 className="text-[20px] font-bold leading-[1.3] text-navy sm:text-[22px]">The Role of Innovation</h3>
+                  <p className="mt-2 text-[15px] leading-[1.75] text-muted sm:text-[16px]">
                     Innovation helps in the discovery of new drugs, advanced
                     drug delivery systems, and more effective treatment
                     solutions. With the use of modern research techniques and
@@ -99,8 +99,8 @@ export default async function BlogDetailPage({
                   </p>
                 </Reveal>
                 <Reveal>
-                  <h3 className="heading-sub">Advancements in Research</h3>
-                  <p className="mt-2 text-body">
+                  <h3 className="text-[20px] font-bold leading-[1.3] text-navy sm:text-[22px]">Advancements in Research</h3>
+                  <p className="mt-2 text-[15px] leading-[1.75] text-muted sm:text-[16px]">
                     Modern research and development are focused on precision
                     medicine, biologics, and personalized treatments. These
                     advancements allow for more targeted therapies with fewer
@@ -110,7 +110,7 @@ export default async function BlogDetailPage({
                 </Reveal>
               </div>
               <Reveal variant="right">
-                <div className="relative h-full min-h-[200px] overflow-hidden rounded-2xl animate-float-slow">
+                <div className="relative h-full min-h-[200px] overflow-hidden rounded-2xl motion-safe:animate-float-slow">
                   <Image src={assets.blogInline} alt="" fill sizes="190px" className="object-cover" />
                 </div>
               </Reveal>
@@ -125,8 +125,8 @@ export default async function BlogDetailPage({
             </Reveal>
 
             <Reveal className="mt-6">
-              <h3 className="heading-sub">A Healthier Tomorrow</h3>
-              <p className="mt-2 text-body">
+              <h3 className="text-[20px] font-bold leading-[1.3] text-navy sm:text-[22px]">A Healthier Tomorrow</h3>
+              <p className="mt-2 text-[15px] leading-[1.75] text-muted sm:text-[16px]">
                 As the industry continues to innovate, the future looks
                 promising with more effective, safe, and accessible medicines.
                 Collaboration, research, and technology will remain key in

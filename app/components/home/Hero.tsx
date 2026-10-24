@@ -27,7 +27,7 @@ export default function Hero() {
       />
       <div className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-r from-white/85 via-white/45 to-transparent" />
 
-      <div className="relative z-10 mx-auto w-full max-w-[1240px] px-6 py-16 md:px-10 lg:px-16">
+      <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10 py-16">
         <div className="max-w-[540px]">
           <p className="mb-4 text-[11px] font-semibold uppercase tracking-[2.5px] text-teal-dark sm:text-[13px] sm:tracking-[4px]">
             Advancing Healthcare Together

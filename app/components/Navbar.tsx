@@ -89,7 +89,7 @@ export default function Navbar() {
 
         <Link
           href={header.enquiryButton.href}
-          className="shine group hidden h-[43px] shrink-0 items-center justify-center gap-3 rounded-full border-2 border-white bg-gradient-to-r from-[#00bfae] to-[#00a7bd] px-6 xl:min-w-[176px] text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:brightness-110 lg:flex"
+          className="relative isolate overflow-hidden after:pointer-events-none after:absolute after:inset-y-0 after:left-0 after:w-2/5 after:bg-linear-to-r after:from-transparent after:via-white/45 after:to-transparent after:[transform:translateX(-120%)_skewX(-20deg)] hover:after:animate-shine group hidden h-[43px] shrink-0 items-center justify-center gap-3 rounded-full border-2 border-white bg-gradient-to-r from-[#00bfae] to-[#00a7bd] px-6 xl:min-w-[176px] text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:brightness-110 lg:flex"
         >
           {header.enquiryButton.label}
           <Icon

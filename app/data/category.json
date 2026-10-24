@@ -377,26 +377,8 @@
                   ],
                   "image": "/About/companyImage.png",
                   "heroImage": "/About/companyImage.png"
-                },
-                {
-                  "slug": "patient-support",
-                  "title": "Patient Support",
-                  "description": "Programs and information that help patients use medicines safely.",
-                  "icon": "heart",
-                  "body": [
-                    "Our patient support services are designed to produce safe, effective, and high-quality outcomes. With advanced facilities, strict quality control, and a commitment to global standards, we ensure every product meets the highest levels of safety and efficacy.",
-                    "We work across a wide range of pharmaceutical products, including tablets, capsules, liquids, and injections, using modern technology and automated processes. Our experienced team follows internationally recognized guidelines to maintain consistency, purity, and reliability in every batch.",
-                    "From raw material sourcing to final production, we focus on precision, compliance, and continuous improvement. Our goal is to support healthcare needs worldwide by delivering trusted and high-quality pharmaceutical solutions."
-                  ],
-                  "highlights": [
-                    "WHO-GMP certified facilities",
-                    "Stringent in-process quality checks",
-                    "Scalable batch sizes",
-                    "Complete regulatory documentation"
-                  ],
-                  "image": "/Gallery/gallery-1.jpg",
-                  "heroImage": "/Gallery/gallery-1.jpg"
                 }
+                
               ]
             }
           }

@@ -100,18 +100,7 @@ export default async function ServiceDetailPage({
               />
             </SidebarBox>
 
-            <Reveal variant="right" delay={150}>
-              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary to-teal-dark p-7 text-white">
-                <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full border-[18px] border-white/10 motion-safe:animate-spin-slow" />
-                <h3 className="text-[20px] font-bold leading-[1.3] sm:text-[22px]">Need this service?</h3>
-                <p className="mt-2 text-[14px] text-white/85">
-                  Talk to our experts and get a tailored proposal.
-                </p>
-                <ButtonLink href="/contact" variant="teal" className="mt-5">
-                  Contact Us
-                </ButtonLink>
-              </div>
-            </Reveal>
+            
           </aside>
         </div>
       </section>
